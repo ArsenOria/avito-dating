@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Советы гостей: макеты</title>
+<meta name="description" content="Авито Путешествия: советы от тех, кто там жил. Макеты для кейса «Между сделками».">
+<meta property="og:title" content="Советы гостей: макеты">
+<meta property="og:description" content="Шесть экранов: читатель, автор, карта путешествий.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#F2F3F5; --ink:#000; --muted:#5E636B; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:Manrope, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+.wrap { max-width:1440px; margin:0 auto; padding:0 24px 80px; }
+header { padding:56px 0 24px; display:flex; flex-wrap:wrap; gap:24px 40px; align-items:flex-end; justify-content:space-between; }
+.logo { display:flex; align-items:center; gap:16px; }
+.logo svg { flex:none; }
+h1.title { margin:0; font-size:clamp(32px,5vw,56px); line-height:1; font-weight:800; letter-spacing:-0.03em; }
+.sub { margin:10px 0 0; font-size:16px; font-weight:500; color:var(--muted); }
+nav.jump { display:flex; gap:8px; flex-wrap:wrap; }
+nav.jump a { display:inline-flex; align-items:center; gap:8px; height:44px; padding:0 18px; border-radius:999px; background:#fff; color:#000; text-decoration:none; font-weight:700; font-size:15px; }
+nav.jump a:hover { background:#E6E8EB; }
+nav.jump i { width:10px; height:10px; border-radius:50%; display:inline-block; }
+.variant { margin-top:48px; padding:40px 24px 48px; background:#fff; border-radius:32px; scroll-margin-top:16px; }
+.vhead { display:flex; gap:16px; align-items:flex-start; max-width:860px; margin:0 auto 36px; }
+.tag { flex:none; width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:22px; color:#000; }
+.vhead h2 { margin:2px 0 6px; font-size:clamp(26px,3vw,36px); line-height:1.05; font-weight:800; letter-spacing:-0.02em; }
+.vhead p { margin:0; font-size:16px; line-height:1.45; font-weight:500; color:var(--muted); }
+.row { display:flex; flex-wrap:wrap; justify-content:center; gap:40px 28px; }
+.phone { margin:0; display:flex; flex-direction:column; align-items:center; gap:14px; }
+.bezel { width:414px; height:868px; padding:12px; border-radius:58px; background:#111; box-shadow:0 30px 60px -20px rgba(0,0,0,.35), 0 0 0 1px #2a2a2a inset; }
+.screen { width:390px; height:844px; border-radius:46px; overflow:hidden; background:#fff; position:relative; }
+.screen button, .screen a, .screen input, .screen label { cursor:default; }
+figcaption { font-size:15px; font-weight:600; color:var(--muted); }
+figcaption b { color:#000; font-weight:800; margin-right:4px; }
+footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted); font-weight:500; }
+@media (max-width: 1430px) { .phone { zoom:.86; } }
+@media (max-width: 1260px) { .phone { zoom:.74; } }
+@media (max-width: 1090px) { .phone { zoom:.8; } }
+@media (max-width: 520px) {
+  .wrap { padding:0 16px 48px; }
+  header { padding-top:32px; }
+  .variant { padding:28px 0 36px; border-radius:24px; }
+  .vhead { padding:0 16px; }
+  .phone { zoom:.8; }
+}
+@media (max-width: 370px) { .phone { zoom:.72; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div>
+    <div class="logo">
+      <svg aria-hidden="true" width="56" height="56" viewBox="0 0 56 56"><circle cx="15" cy="15" r="11" fill="#00AAFF"/><circle cx="40" cy="15" r="13" fill="#FF6163"/><circle cx="16" cy="41" r="13" fill="#97CF26"/><circle cx="41" cy="41" r="11" fill="#A169F7"/></svg>
+      <h1 class="title">Советы от тех, кто там жил</h1>
+    </div>
+    <p class="sub">Авито Путешествия · макеты для кейса «Между сделками» · 6 экранов</p>
+  </div>
+  <nav class="jump" aria-label="Варианты">
+    <a href="#read"><i style="background:#00AAFF"></i>Читатель</a>
+    <a href="#write"><i style="background:#FF6163"></i>Автор</a>
+    <a href="#map"><i style="background:#97CF26"></i>Карта</a>
+  </nav>
+</header>
+<section class="variant" id="read">
+  <div class="vhead">
+    <span class="tag" style="background:#00AAFF">1</span>
+    <div>
+      <h2>Читатель: советы рядом с жильём</h2>
+      <p>Советы гостей стоят прямо в карточке жилья и в ленте по городу. Каждый автор жил там по брони на Авито, а жильё из совета бронируется в один клик.</p>
+    </div>
+  </div>
+  <div class="row">
+<figure class="phone">
+  <div class="bezel"><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #FFFFFF; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
+
+  <div style="flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column">
+
+    <!-- Фото -->
+    <section aria-label="Фото жилья" style="position: relative; height: 204px; flex-shrink: 0; background: #F2F3F5; overflow: hidden">
+      <svg aria-hidden="true" style="position: absolute; right: -40px; top: -50px" width="170" height="170" viewBox="0 0 170 170"><circle cx="85" cy="85" r="85" fill="#E5F6FF"></circle></svg>
+      <svg aria-hidden="true" style="position: absolute; left: -30px; bottom: -60px" width="130" height="130" viewBox="0 0 130 130"><circle cx="65" cy="65" r="65" fill="#F0F8E0"></circle></svg>
+      <svg aria-hidden="true" style="position: absolute; left: 50%; top: 34px; margin-left: -90px" width="180" height="120" viewBox="0 0 180 120" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M30 22 h50 v58 h-50 z" fill="#FFFFFF"></path>
+        <line x1="55" y1="22" x2="55" y2="80"></line>
+        <line x1="30" y1="50" x2="80" y2="50"></line>
+        <path d="M24 80 h62"></path>
+        <path d="M118 30 a12 12 0 0 1 24 0 v6 h-24 z" fill="#FFFFFF"></path>
+        <line x1="130" y1="36" x2="130" y2="66"></line>
+        <path d="M120 66 h20"></path>
+        <path d="M20 112 v-18 a8 8 0 0 1 8 -8 h104 a8 8 0 0 1 8 8 v18" fill="#FFFFFF"></path>
+        <path d="M14 112 v-12 a6 6 0 0 1 12 0 v12"></path>
+        <path d="M134 112 v-12 a6 6 0 0 1 12 0 v12"></path>
+        <line x1="14" y1="112" x2="146" y2="112"></line>
+        <line x1="80" y1="94" x2="80" y2="112"></line>
+        <path d="M156 112 v-34 M150 78 h12 l-2 -16 h-8 z" fill="#FFFFFF"></path>
+      </svg>
+      <div style="position: absolute; top: 12px; left: 16px; right: 16px; display: flex; justify-content: space-between">
+        <button type="button" aria-label="Назад" style="width: 44px; height: 44px; border-radius: 999px; border: none; background: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); cursor: pointer; padding: 0">
+          <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5 l-7 7 7 7"></path></svg>
+        </button>
+        <div style="display: flex; gap: 8px">
+          <button type="button" aria-label="Добавить в избранное" style="width: 44px; height: 44px; border-radius: 999px; border: none; background: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); cursor: pointer; padding: 0">
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20 s-7.5 -4.6 -7.5 -10.2 A4.3 4.3 0 0 1 12 7.2 a4.3 4.3 0 0 1 7.5 2.6 C19.5 15.4 12 20 12 20 z"></path></svg>
+          </button>
+          <button type="button" aria-label="Поделиться" style="width: 44px; height: 44px; border-radius: 999px; border: none; background: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); cursor: pointer; padding: 0">
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15 V4"></path><path d="M7.5 8.5 L12 4 l4.5 4.5"></path><path d="M5 13 v5 a2 2 0 0 0 2 2 h10 a2 2 0 0 0 2 -2 v-5"></path></svg>
+          </button>
+        </div>
+      </div>
+      <div style="position: absolute; bottom: 30px; left: 0; right: 0; display: flex; justify-content: center; gap: 6px" aria-hidden="true">
+        <span style="width: 18px; height: 6px; border-radius: 999px; background: #000000"></span>
+        <span style="width: 6px; height: 6px; border-radius: 999px; background: #C4C7CC"></span>
+        <span style="width: 6px; height: 6px; border-radius: 999px; background: #C4C7CC"></span>
+        <span style="width: 6px; height: 6px; border-radius: 999px; background: #C4C7CC"></span>
+        <span style="width: 6px; height: 6px; border-radius: 999px; background: #C4C7CC"></span>
+      </div>
+      <span style="position: absolute; bottom: 24px; right: 16px; background: #FFFFFF; color: #000000; font-size: 12px; font-weight: 600; line-height: 16px; padding: 3px 9px; border-radius: 999px">1 из 14</span>
+    </section>
+
+    <!-- Лист -->
+    <div style="margin-top: -16px; position: relative; background: #FFFFFF; border-radius: 20px 20px 0 0; padding: 18px 16px 0; display: flex; flex-direction: column; gap: 14px; flex: 1; min-height: 0">
+
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <h1 style="margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.05">Квартира у Кремля</h1>
+        <p style="margin: 0; display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 500; color: #6B6F76">
+          <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="#000000" stroke="none"><path d="M12 3.2 l2.6 5.5 6 .7 -4.5 4.1 1.2 5.9 -5.3 -3 -5.3 3 1.2 -5.9 -4.5 -4.1 6 -.7 z"></path></svg>
+          <span style="color: #000000; font-weight: 700">4,9</span>
+          <span>128 отзывов · 2 гостя · 1 спальня</span>
+        </p>
+        <p style="margin: 0; display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 500; color: #6B6F76">
+          <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+          <span>Казань, ул. Баумана · 6 мин до Кремля</span>
+        </p>
+      </div>
+
+      <!-- Советы гостей -->
+      <section aria-labelledby="g1-tips" style="position: relative; background: #F2F3F5; border-radius: 20px; padding: 16px 16px 6px; display: flex; flex-direction: column; gap: 12px; overflow: hidden">
+        <svg aria-hidden="true" style="position: absolute; right: -36px; top: -44px" width="110" height="110" viewBox="0 0 110 110"><circle cx="55" cy="55" r="55" fill="#F1E9FE"></circle></svg>
+
+        <div style="position: relative; display: flex; align-items: flex-start; gap: 10px">
+          <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36" style="flex-shrink: 0"><circle cx="13" cy="13" r="10" fill="#00AAFF"></circle><circle cx="24" cy="13" r="10" fill="#FF6163" fill-opacity="0.9"></circle><circle cx="13" cy="24" r="10" fill="#97CF26" fill-opacity="0.9"></circle><circle cx="24" cy="24" r="10" fill="#A169F7" fill-opacity="0.9"></circle></svg>
+          <div style="display: flex; flex-direction: column; gap: 2px">
+            <h2 id="g1-tips" style="margin: 0; font-size: 20px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15">Советы гостей о районе</h2>
+            <p style="margin: 0; font-size: 13px; font-weight: 500; color: #6B6F76; line-height: 1.3">Пишут только те, кто жил по брони на Авито</p>
+          </div>
+        </div>
+
+        <!-- Совет: Марина -->
+        <article style="position: relative; background: #FFFFFF; border-radius: 16px; padding: 12px; display: flex; flex-direction: column; gap: 8px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span style="position: relative; width: 36px; height: 36px; flex-shrink: 0; border-radius: 999px; background: #E5F6FF; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800">
+              <svg aria-hidden="true" style="position: absolute; right: -8px; top: -8px" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="11" fill="#FF6163"></circle></svg>
+              <span style="position: relative">М</span>
+            </span>
+            <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
+              <span style="font-size: 15px; font-weight: 700; line-height: 1.2">Марина</span>
+              <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 4px; background: #F1E9FE; border-radius: 999px; padding: 2px 8px 2px 5px; font-size: 12px; font-weight: 700; line-height: 16px">
+                <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="#A169F7" stroke="none"><path d="M12 2 l2.9 2.1 3.6 0 1.1 3.4 2.9 2.1 -1.1 3.4 1.1 3.4 -2.9 2.1 -1.1 3.4 -3.6 0 L12 24 9.1 21.9 5.5 21.9 4.4 18.5 1.5 16.4 2.6 13 1.5 9.6 4.4 7.5 5.5 4.1 9.1 4.1 z"></path></svg>
+                Знаток Казани
+              </span>
+            </div>
+            <button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; display: inline-flex; align-items: center; gap: 6px; border: 1.5px solid #E6E8EB; background: #FFFFFF; border-radius: 999px; padding: 0 12px; font-family: inherit; font-size: 13px; font-weight: 700; color: #000000; cursor: pointer">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10 v10 H4 V10 z"></path><path d="M7 10 l4 -7 a2 2 0 0 1 3 2 l-1 4 h6 a2 2 0 0 1 2 2.3 l-1.3 7 a2 2 0 0 1 -2 1.7 H7"></path></svg>
+              Полезно 87
+            </button>
+          </div>
+          <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; background: #F0F8E0; border-radius: 999px; padding: 4px 10px 4px 8px; font-size: 12px; font-weight: 600; line-height: 16px">
+            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 l7 3 v5 c0 4.5 -3 8 -7 10 c-4 -2 -7 -5.5 -7 -10 V6 z"></path><path d="M8.8 12 l2.2 2.2 4.2 -4.4"></path></svg>
+            Жила по брони на Авито, 12-15 августа
+          </span>
+          <p style="margin: 0; font-size: 15px; font-weight: 500; line-height: 1.35">Жить лучше у Баумана: всё пешком, но окна во двор, на улице шумно до ночи.</p>
+        </article>
+
+        <!-- Совет: Илья -->
+        <article style="position: relative; background: #FFFFFF; border-radius: 16px; padding: 12px; display: flex; flex-direction: column; gap: 8px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span style="position: relative; width: 36px; height: 36px; flex-shrink: 0; border-radius: 999px; background: #F0F8E0; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800">
+              <svg aria-hidden="true" style="position: absolute; left: -8px; bottom: -8px" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="11" fill="#00AAFF"></circle></svg>
+              <span style="position: relative">И</span>
+            </span>
+            <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
+              <span style="font-size: 15px; font-weight: 700; line-height: 1.2">Илья</span>
+              <span style="font-size: 12px; font-weight: 600; line-height: 1.2; color: #6B6F76">Ездил с детьми</span>
+            </div>
+            <button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; display: inline-flex; align-items: center; gap: 6px; border: 1.5px solid #E6E8EB; background: #FFFFFF; border-radius: 999px; padding: 0 12px; font-family: inherit; font-size: 13px; font-weight: 700; color: #000000; cursor: pointer">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10 v10 H4 V10 z"></path><path d="M7 10 l4 -7 a2 2 0 0 1 3 2 l-1 4 h6 a2 2 0 0 1 2 2.3 l-1.3 7 a2 2 0 0 1 -2 1.7 H7"></path></svg>
+              Полезно 41
+            </button>
+          </div>
+          <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; background: #F0F8E0; border-radius: 999px; padding: 4px 10px 4px 8px; font-size: 12px; font-weight: 600; line-height: 16px">
+            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 l7 3 v5 c0 4.5 -3 8 -7 10 c-4 -2 -7 -5.5 -7 -10 V6 z"></path><path d="M8.8 12 l2.2 2.2 4.2 -4.4"></path></svg>
+            Жил по брони на Авито, 6-9 сентября
+          </span>
+          <p style="margin: 0; font-size: 15px; font-weight: 500; line-height: 1.35">В Кремль к открытию, к 11 уже толпы. С&nbsp;детьми лучше в&nbsp;будни.</p>
+        </article>
+
+        <a href="#" tabindex="-1" style="position: relative; height: 44px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #005A99; font-size: 15px; font-weight: 700">
+          Все 24 совета по Казани
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#005A99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5 l7 7 -7 7"></path></svg>
+        </a>
+      </section>
+    </div>
+  </div>
+
+  <!-- Липкая панель -->
+  <div style="flex-shrink: 0; border-top: 1px solid #E6E8EB; background: #FFFFFF; padding: 12px 16px 16px; display: flex; align-items: center; gap: 12px">
+    <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+      <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1">3 400 ₽ <span style="font-size: 14px; font-weight: 600; letter-spacing: 0">за ночь</span></span>
+      <span style="font-size: 13px; font-weight: 500; color: #6B6F76">8-10 ноября · 2 гостя</span>
+    </div>
+    <button type="button" style="height: 52px; padding: 0 24px; border: none; border-radius: 999px; background: #00AAFF; color: #000000; font-family: inherit; font-size: 16px; font-weight: 800; cursor: pointer">Забронировать</button>
+  </div>
+
+</div></div></div>
+  <figcaption><b>G1</b> Карточка жилья с советами</figcaption>
+</figure>
+<figure class="phone">
+  <div class="bezel"><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #F2F3F5; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
+
+  <div style="flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column">
+
+    <header style="position: relative; overflow: hidden; background: #FFFFFF; border-radius: 0 0 24px 24px; padding: 4px 16px 12px; display: flex; flex-direction: column; gap: 2px; flex-shrink: 0">
+      <svg aria-hidden="true" style="position: absolute; right: -44px; top: -56px" width="120" height="120" viewBox="0 0 120 120"><circle cx="60" cy="60" r="60" fill="#E5F6FF"></circle></svg>
+      <div style="position: relative; display: flex; align-items: center; justify-content: space-between">
+        <button type="button" aria-label="Назад" style="width: 44px; height: 44px; margin-left: -4px; border: none; background: transparent; border-radius: 999px; display: flex; align-items: center; justify-content: center; padding: 0; cursor: pointer">
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5 l-7 7 7 7"></path></svg>
+        </button>
+        <span style="font-size: 15px; font-weight: 700">Путешествия</span>
+        <button type="button" aria-label="Советы на карте" style="width: 44px; height: 44px; margin-right: -4px; border: none; background: transparent; border-radius: 999px; display: flex; align-items: center; justify-content: center; padding: 0; cursor: pointer">
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 L3 6.5 V20 l6 -2.5 6 2.5 6 -2.5 V4 l-6 2.5 z"></path><line x1="9" y1="4" x2="9" y2="17.5"></line><line x1="15" y1="6.5" x2="15" y2="20"></line></svg>
+        </button>
+      </div>
+      <div style="position: relative; display: flex; flex-direction: column; gap: 6px">
+        <h1 style="margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.05">Советы по Казани</h1>
+        <p style="margin: 0; display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: #6B6F76">
+          <span>24 совета от 11 гостей</span>
+          <span aria-hidden="true">·</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px; color: #000000"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 l7 3 v5 c0 4.5 -3 8 -7 10 c-4 -2 -7 -5.5 -7 -10 V6 z"></path><path d="M8.8 12 l2.2 2.2 4.2 -4.4"></path></svg>все жили по брони</span>
+        </p>
+      </div>
+    </header>
+
+    <div role="group" aria-label="Фильтр советов" style="padding: 10px 16px; display: flex; gap: 8px; overflow: hidden; flex-shrink: 0">
+      <button type="button" aria-pressed="true" style="flex-shrink: 0; height: 44px; padding: 0 16px; border: none; border-radius: 999px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer">Все</button>
+      <button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; padding: 0 16px; border: none; border-radius: 999px; background: #FFFFFF; color: #000000; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer">Пары</button>
+      <button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; padding: 0 16px; border: none; border-radius: 999px; background: #FFFFFF; color: #000000; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer">С детьми</button>
+      <button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; padding: 0 16px; border: none; border-radius: 999px; background: #FFFFFF; color: #000000; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer">Свежие</button>
+    </div>
+
+    <div style="padding: 0 12px; display: flex; flex-direction: column; gap: 8px; flex-shrink: 0">
+      <article style="background: #FFFFFF; border-radius: 16px; padding: 12px 14px; display: flex; flex-direction: column; gap: 7px; flex-shrink: 0">
+        <div style="display: flex; align-items: center; gap: 10px">
+            <span style="position: relative; width: 36px; height: 36px; flex-shrink: 0; border-radius: 999px; background: #E5F6FF; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800">
+              <svg aria-hidden="true" style="position: absolute; right: -8px; top: -8px" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="11" fill="#FF6163"></circle></svg>
+              <span style="position: relative">М</span>
+            </span>
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 15px; font-weight: 700; line-height: 1.2">Марина</span>
+            <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 4px; background: #F1E9FE; border-radius: 999px; padding: 2px 8px 2px 5px; font-size: 12px; font-weight: 700; line-height: 16px"><svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="#A169F7" stroke="none"><path d="M12 2 l2.9 2.1 3.6 0 1.1 3.4 2.9 2.1 -1.1 3.4 1.1 3.4 -2.9 2.1 -1.1 3.4 -3.6 0 L12 24 9.1 21.9 5.5 21.9 4.4 18.5 1.5 16.4 2.6 13 1.5 9.6 4.4 7.5 5.5 4.1 9.1 4.1 z"></path></svg>Знаток Казани</span>
+          </div>
+          <span style="flex-shrink: 0; background: #E5F6FF; border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; line-height: 16px">Где жить</span>
+        </div>
+        <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; background: #F0F8E0; border-radius: 999px; padding: 4px 10px 4px 8px; font-size: 12px; font-weight: 600; line-height: 16px">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 l7 3 v5 c0 4.5 -3 8 -7 10 c-4 -2 -7 -5.5 -7 -10 V6 z"></path><path d="M8.8 12 l2.2 2.2 4.2 -4.4"></path></svg>
+          Жила по брони на Авито, 12-15 августа
+        </span>
+        <p style="margin: 0; font-size: 15px; font-weight: 500; line-height: 1.32">Жить лучше у Баумана: всё пешком, но окна во двор, на улице шумно до ночи.</p>
+        <div style="display: flex; gap: 8px; margin-top: 1px">
+          <a href="#" tabindex="-1" style="flex: 1; min-width: 0; height: 44px; box-sizing: border-box; display: flex; align-items: center; gap: 8px; padding: 0 8px 0 6px; background: #F2F3F5; border-radius: 12px; text-decoration: none; color: #000000">
+            <span style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 8px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 L12 4 l8 6.5 V20 H4 z"></path><rect x="9.5" y="13" width="5" height="7"></rect></svg></span>
+            <span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
+              <span style="font-size: 13px; font-weight: 700; line-height: 1.25; white-space: nowrap">Квартира у Кремля</span>
+              <span style="font-size: 12px; font-weight: 600; line-height: 1.25; color: #6B6F76; white-space: nowrap">3 400 ₽ · <span style="color: #005A99; font-weight: 700">Смотреть</span></span>
+            </span>
+          </a>
+          <button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; display: inline-flex; align-items: center; gap: 6px; border: 1.5px solid #E6E8EB; background: #FFFFFF; border-radius: 999px; padding: 0 12px; font-family: inherit; font-size: 13px; font-weight: 700; color: #000000; cursor: pointer">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10 v10 H4 V10 z"></path><path d="M7 10 l4 -7 a2 2 0 0 1 3 2 l-1 4 h6 a2 2 0 0 1 2 2.3 l-1.3 7 a2 2 0 0 1 -2 1.7 H7"></path></svg>
+            Полезно 87
+          </button>
+        </div>
+      </article>
+      <article style="background: #FFFFFF; border-radius: 16px; padding: 12px 14px; display: flex; flex-direction: column; gap: 7px; flex-shrink: 0">
+        <div style="display: flex; align-items: center; gap: 10px">
+            <span style="position: relative; width: 36px; height: 36px; flex-shrink: 0; border-radius: 999px; background: #F0F8E0; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800">
+              <svg aria-hidden="true" style="position: absolute; left: -8px; bottom: -8px" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="11" fill="#00AAFF"></circle></svg>
+              <span style="position: relative">И</span>
+            </span>
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 15px; font-weight: 700; line-height: 1.2">Илья</span>
+            <span style="font-size: 12px; font-weight: 600; line-height: 1.2; color: #6B6F76">Ездил с детьми</span>
+          </div>
+          <span style="flex-shrink: 0; background: #F1E9FE; border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; line-height: 16px">Куда сходить</span>
+        </div>
+        <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; background: #F0F8E0; border-radius: 999px; padding: 4px 10px 4px 8px; font-size: 12px; font-weight: 600; line-height: 16px">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 l7 3 v5 c0 4.5 -3 8 -7 10 c-4 -2 -7 -5.5 -7 -10 V6 z"></path><path d="M8.8 12 l2.2 2.2 4.2 -4.4"></path></svg>
+          Жил по брони на Авито, 6-9 сентября
+        </span>
+        <p style="margin: 0; font-size: 15px; font-weight: 500; line-height: 1.32">В Кремль к открытию, к 11 уже толпы. С&nbsp;детьми лучше в&nbsp;будни.</p>
+        <div style="display: flex; gap: 8px; margin-top: 1px">
+          <a href="#" tabindex="-1" style="flex: 1; min-width: 0; height: 44px; box-sizing: border-box; display: flex; align-items: center; gap: 8px; padding: 0 8px 0 6px; background: #F2F3F5; border-radius: 12px; text-decoration: none; color: #000000">
+            <span style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 8px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 L12 4 l8 6.5 V20 H4 z"></path><rect x="9.5" y="13" width="5" height="7"></rect></svg></span>
+            <span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
+              <span style="font-size: 13px; font-weight: 700; line-height: 1.25; white-space: nowrap">2 спальни на Баумана</span>
+              <span style="font-size: 12px; font-weight: 600; line-height: 1.25; color: #6B6F76; white-space: nowrap">4 900 ₽ · <span style="color: #005A99; font-weight: 700">Смотреть</span></span>
+            </span>
+          </a>
+          <button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; display: inline-flex; align-items: center; gap: 6px; border: 1.5px solid #E6E8EB; background: #FFFFFF; border-radius: 999px; padding: 0 12px; font-family: inherit; font-size: 13px; font-weight: 700; color: #000000; cursor: pointer">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10 v10 H4 V10 z"></path><path d="M7 10 l4 -7 a2 2 0 0 1 3 2 l-1 4 h6 a2 2 0 0 1 2 2.3 l-1.3 7 a2 2 0 0 1 -2 1.7 H7"></path></svg>
+            Полезно 41
+          </button>
+        </div>
+      </article>
+      <article style="background: #FFFFFF; border-radius: 16px; padding: 12px 14px; display: flex; flex-direction: column; gap: 7px; flex-shrink: 0">
+        <div style="display: flex; align-items: center; gap: 10px">
+            <span style="position: relative; width: 50px; height: 36px; flex-shrink: 0">
+              <span style="position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 999px; background: #FFE8E8; border: 2px solid #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 800; padding-right: 4px; box-sizing: border-box">А</span>
+              <span style="position: absolute; right: 0; bottom: -2px; width: 26px; height: 26px; border-radius: 999px; background: #E5F6FF; border: 2px solid #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800">Д</span>
+            </span>
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 15px; font-weight: 700; line-height: 1.2">Аня и Дима</span>
+            <span style="font-size: 12px; font-weight: 600; line-height: 1.2; color: #6B6F76">Ездили вдвоём</span>
+          </div>
+          <span style="flex-shrink: 0; background: #FFE8E8; border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; line-height: 16px">Чего избегать</span>
+        </div>
+        <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; background: #F0F8E0; border-radius: 999px; padding: 4px 10px 4px 8px; font-size: 12px; font-weight: 600; line-height: 16px">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 l7 3 v5 c0 4.5 -3 8 -7 10 c-4 -2 -7 -5.5 -7 -10 V6 z"></path><path d="M8.8 12 l2.2 2.2 4.2 -4.4"></path></svg>
+          Жили по брони на Авито, 3-5 октября
+        </span>
+        <p style="margin: 0; font-size: 15px; font-weight: 500; line-height: 1.32">Чак-чак берите в слободе, не на Баумана: там вдвое дороже.</p>
+        <div style="display: flex; gap: 8px; margin-top: 1px">
+          <a href="#" tabindex="-1" style="flex: 1; min-width: 0; height: 44px; box-sizing: border-box; display: flex; align-items: center; gap: 8px; padding: 0 8px 0 6px; background: #F2F3F5; border-radius: 12px; text-decoration: none; color: #000000">
+            <span style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 8px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 L12 4 l8 6.5 V20 H4 z"></path><rect x="9.5" y="13" width="5" height="7"></rect></svg></span>
+            <span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
+              <span style="font-size: 13px; font-weight: 700; line-height: 1.25; white-space: nowrap">Студия в слободе</span>
+              <span style="font-size: 12px; font-weight: 600; line-height: 1.25; color: #6B6F76; white-space: nowrap">2 900 ₽ · <span style="color: #005A99; font-weight: 700">Смотреть</span></span>
+            </span>
+          </a>
+          <button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; display: inline-flex; align-items: center; gap: 6px; border: 1.5px solid #E6E8EB; background: #FFFFFF; border-radius: 999px; padding: 0 12px; font-family: inherit; font-size: 13px; font-weight: 700; color: #000000; cursor: pointer">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10 v10 H4 V10 z"></path><path d="M7 10 l4 -7 a2 2 0 0 1 3 2 l-1 4 h6 a2 2 0 0 1 2 2.3 l-1.3 7 a2 2 0 0 1 -2 1.7 H7"></path></svg>
+            Полезно 23
+          </button>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <nav aria-label="Основная навигация" style="flex: none; height: 72px; box-sizing: border-box; border-top: 1px solid #E6E8EB; background: #FFFFFF; display: grid; grid-template-columns: repeat(5, 1fr); padding: 6px 4px 10px 4px">
+    <a href="#" tabindex="-1" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #0077CC">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0077CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5L12 4l8 6.5V20h-5v-6h-6v6H4z"></path></svg>
+      <span style="font-size: 11px; font-weight: 700">Главная</span>
+    </a>
+    <a href="#" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #6B6F76">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20 s-7.5 -4.6 -7.5 -10.2 A4.3 4.3 0 0 1 12 7.2 a4.3 4.3 0 0 1 7.5 2.6 C19.5 15.4 12 20 12 20 z"></path></svg>
+      <span style="font-size: 11px; font-weight: 600">Избранное</span>
+    </a>
+    <a href="#" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #6B6F76">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+      <span style="font-size: 11px; font-weight: 600">Разместить</span>
+    </a>
+    <a href="#" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #6B6F76">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 3.5V17A2.5 2.5 0 0 1 4 14.5z"></path></svg>
+      <span style="font-size: 11px; font-weight: 600">Сообщения</span>
+    </a>
+    <a href="#" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #6B6F76">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.5" r="3.8"></circle><path d="M4.5 20a7.5 7.5 0 0 1 15 0"></path></svg>
+      <span style="font-size: 11px; font-weight: 600">Профиль</span>
+    </a>
+  </nav>
+
+</div></div></div>
+  <figcaption><b>G2</b> Советы по городу</figcaption>
+</figure>
+  </div>
+</section>
+<section class="variant" id="write">
+  <div class="vhead">
+    <span class="tag" style="background:#FF6163">2</span>
+    <div>
+      <h2>Автор: советы после выезда</h2>
+      <p>На следующий день после выезда Авито предлагает оставить 3-5 советов. Город попадает на карту, за полезные советы автор получает бонусы и статус знатока.</p>
+    </div>
+  </div>
+  <div class="row">
+<figure class="phone">
+  <div class="bezel"><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #FFFFFF; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
+
+  <div aria-hidden="true" style="position: absolute; right: -60px; top: -70px; width: 200px; height: 200px; border-radius: 999px; background: #E5F6FF"></div>
+  <div aria-hidden="true" style="position: absolute; right: 22px; top: 70px; width: 52px; height: 52px; border-radius: 999px; background: #00AAFF"></div>
+  <div aria-hidden="true" style="position: absolute; right: 44px; top: 138px; width: 20px; height: 20px; border-radius: 999px; background: #FF6163"></div>
+  <div aria-hidden="true" style="position: absolute; right: 2px; top: 118px; width: 30px; height: 30px; border-radius: 999px; background: #97CF26"></div>
+
+  <div style="position: relative; flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column">
+
+    <div style="padding: 8px 12px 0 12px; display: flex; align-items: center; justify-content: space-between">
+      <button aria-label="Закрыть" style="width: 44px; height: 44px; border: 0; border-radius: 999px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; padding: 0; cursor: pointer">
+        <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12"></path><path d="M18 6L6 18"></path></svg>
+      </button>
+      <span style="font-size: 15px; font-weight: 700">Путешествия</span>
+      <span aria-hidden="true" style="width: 44px; height: 44px"></span>
+    </div>
+
+    <div style="padding: 6px 20px 0 20px; display: flex; flex-direction: column; gap: 8px">
+      <span style="align-self: flex-start; height: 26px; padding: 0 10px; border-radius: 999px; background: #F2F3F5; display: inline-flex; align-items: center; font-size: 12px; font-weight: 700; color: #6B6F76">Квартира у Кремля, выезд вчера</span>
+      <h1 style="margin: 0; font-size: 32px; line-height: 1.05; font-weight: 800; letter-spacing: -0.02em">Как вам Казань?</h1>
+      <p style="margin: 0; font-size: 15px; line-height: 1.35; font-weight: 500; color: #6B6F76; max-width: 290px">Оставьте 3-5 советов тем, кто поедет следом. Это займёт 2 минуты.</p>
+    </div>
+
+    <div style="margin: 16px 16px 0 16px; border-radius: 16px; background: #F0F8E0; padding: 10px 12px; display: flex; align-items: center; gap: 12px">
+      <div aria-hidden="true" style="position: relative; flex: none; width: 44px; height: 44px; border-radius: 12px; background: #FFFFFF; overflow: hidden">
+        <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><path d="M4 30c6-8 12-4 17-11s12-9 19-6" stroke="#E6E8EB" stroke-width="2" stroke-linecap="round"></path><circle cx="10" cy="14" r="3" fill="#A169F7"></circle><circle cx="34" cy="31" r="3" fill="#00AAFF"></circle><circle cx="15" cy="34" r="3" fill="#FF6163"></circle><circle cx="23" cy="21" r="6" fill="#97CF26"></circle><circle cx="23" cy="21" r="2.4" fill="#000000"></circle></svg>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+        <span style="font-size: 14px; font-weight: 800; line-height: 1.2">Казань добавлена на вашу карту</span>
+        <div style="display: flex; align-items: center; gap: 8px">
+          <span aria-hidden="true" style="flex: 1; height: 6px; border-radius: 999px; background: #FFFFFF; overflow: hidden; display: flex"><span style="width: 5%; background: #000000; border-radius: 999px"></span></span>
+          <span style="font-size: 12px; font-weight: 700; color: #6B6F76">4 из 89 регионов</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin: 18px 20px 0 20px; display: flex; align-items: center; justify-content: space-between">
+      <h2 style="margin: 0; font-size: 18px; line-height: 1.1; font-weight: 800; letter-spacing: -0.01em">Ваши советы</h2>
+      <div style="display: flex; align-items: center; gap: 8px">
+        <span aria-hidden="true" style="display: flex; gap: 3px"><span style="width: 14px; height: 6px; border-radius: 999px; background: #00AAFF"></span><span style="width: 14px; height: 6px; border-radius: 999px; background: #E6E8EB"></span><span style="width: 14px; height: 6px; border-radius: 999px; background: #E6E8EB"></span></span>
+        <span style="font-size: 13px; font-weight: 800">1 из 3</span>
+      </div>
+    </div>
+
+    <article style="margin: 10px 16px 0 16px; border-radius: 16px; background: #E5F6FF; padding: 12px 8px 12px 14px; display: flex; flex-direction: column; gap: 6px">
+      <div style="display: flex; align-items: center; justify-content: space-between">
+        <span style="height: 26px; padding: 0 10px; border-radius: 999px; background: #FFFFFF; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 800">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5L12 4l8 6.5V20H4z"></path></svg>
+          Где жить
+        </span>
+        <button aria-label="Изменить совет" style="width: 44px; height: 44px; margin: -9px -4px -9px 0; border: 0; border-radius: 999px; background: transparent; display: flex; align-items: center; justify-content: center; padding: 0; cursor: pointer">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="M13.5 6.5l4 4"></path></svg>
+        </button>
+      </div>
+      <p style="margin: 0; padding-right: 6px; font-size: 15px; line-height: 1.35; font-weight: 600">Живите в центре: до Кремля 6 минут пешком, до слободы 15 минут.</p>
+      <a href="#" tabindex="-1" style="align-self: stretch; margin: 2px 6px 0 0; height: 44px; box-sizing: border-box; display: flex; align-items: center; gap: 8px; padding: 0 8px 0 6px; background: #FFFFFF; border-radius: 12px; text-decoration: none; color: #000000">
+        <span style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 8px; background: #F2F3F5; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 L12 4 l8 6.5 V20 H4 z"></path><rect x="9.5" y="13" width="5" height="7"></rect></svg></span>
+        <span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
+          <span style="font-size: 13px; font-weight: 700; line-height: 1.25; white-space: nowrap">Квартира у Кремля</span>
+          <span style="font-size: 12px; font-weight: 600; line-height: 1.25; color: #6B6F76; white-space: nowrap">3 400 ₽ за ночь · <span style="color: #005A99; font-weight: 700">Смотреть</span></span>
+        </span>
+      </a>
+    </article>
+
+    <div style="margin: 10px 16px 0 16px; border-radius: 16px; border: 1.5px dashed #C9CDD2; padding: 12px; display: flex; flex-direction: column; gap: 10px">
+      <div role="group" aria-label="Тема совета" style="display: flex; gap: 4px">
+        <button aria-pressed="false" style="height: 44px; padding: 0 9px; border: 1.5px solid #E6E8EB; border-radius: 999px; background: #FFFFFF; font-family: inherit; font-size: 12px; font-weight: 700; color: #000000; cursor: pointer">Где жить</button>
+        <button aria-pressed="true" style="height: 44px; padding: 0 9px; border: 1.5px solid #000000; border-radius: 999px; background: #000000; font-family: inherit; font-size: 12px; font-weight: 700; color: #FFFFFF; cursor: pointer">Куда сходить</button>
+        <button aria-pressed="false" style="height: 44px; padding: 0 9px; border: 1.5px solid #E6E8EB; border-radius: 999px; background: #FFFFFF; font-family: inherit; font-size: 12px; font-weight: 700; color: #000000; cursor: pointer">Чего избегать</button>
+        <button aria-pressed="false" style="height: 44px; padding: 0 9px; border: 1.5px solid #E6E8EB; border-radius: 999px; background: #FFFFFF; font-family: inherit; font-size: 12px; font-weight: 700; color: #000000; cursor: pointer">Еда</button>
+      </div>
+      <label for="tip2" style="font-size: 13px; font-weight: 700; color: #6B6F76">Совет 2</label>
+      <textarea id="tip2" rows="2" placeholder="Куда сходить и в какое время" style="margin-top: -6px; resize: none; border: 0; padding: 0; font-family: inherit; font-size: 15px; line-height: 1.35; font-weight: 500; color: #000000; background: transparent; outline: none"></textarea>
+    </div>
+
+    <div style="margin: 10px 16px 0 16px; border-radius: 16px; background: #F1E9FE; padding: 12px 14px; display: flex; flex-direction: column; gap: 10px">
+      <div style="display: flex; align-items: center; gap: 10px">
+        <span aria-hidden="true" style="flex: none; width: 32px; height: 32px; border-radius: 999px; background: #A169F7; display: flex; align-items: center; justify-content: center">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+        </span>
+        <span style="font-size: 14px; line-height: 1.3; font-weight: 600"><b style="font-weight: 800">+150 ₽ к вашим 600 ₽</b> за каждый совет, который отметят полезным</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <div style="display: flex; justify-content: space-between; align-items: baseline">
+          <span style="font-size: 13px; font-weight: 800">До статуса «Знаток Казани»</span>
+          <span style="font-size: 12px; font-weight: 700; color: #4A4E55">0 из 20 «Полезно»</span>
+        </div>
+        <span aria-hidden="true" style="height: 6px; border-radius: 999px; background: #FFFFFF; display: flex; overflow: hidden"><span style="width: 6px; background: #A169F7; border-radius: 999px"></span></span>
+      </div>
+    </div>
+
+    <div style="margin: 14px 16px 0 16px; display: flex; align-items: flex-start; gap: 10px; padding: 0 4px">
+      <svg aria-hidden="true" style="flex: none; margin-top: 1px" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6z"></path><polyline points="9 12 11.2 14.2 15.5 9.8"></polyline></svg>
+      <span style="font-size: 12px; line-height: 1.4; font-weight: 600; color: #6B6F76">Советы видят только те, кто ищет жильё в Казани. Писать могут только гости с бронью.</span>
+    </div>
+  </div>
+
+  <div style="flex: none; padding: 10px 16px 18px 16px; background: #FFFFFF; border-top: 1px solid #E6E8EB">
+    <button style="width: 100%; height: 52px; border: 0; border-radius: 999px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 16px; font-weight: 800; cursor: pointer">Опубликовать советы</button>
+  </div>
+</div></div></div>
+  <figcaption><b>G3</b> После выезда</figcaption>
+</figure>
+<figure class="phone">
+  <div class="bezel"><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #FFFFFF; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
+
+  <div aria-hidden="true" style="position: absolute; right: -70px; top: -80px; width: 220px; height: 220px; border-radius: 999px; background: #F1E9FE"></div>
+  <div aria-hidden="true" style="position: absolute; right: 130px; top: -36px; width: 80px; height: 80px; border-radius: 999px; background: #E5F6FF"></div>
+
+  <div style="position: relative; flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column">
+
+    <div style="padding: 8px 12px 0 12px; display: flex; align-items: center; justify-content: space-between">
+      <button aria-label="Назад" style="width: 44px; height: 44px; border: 0; border-radius: 999px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; padding: 0; cursor: pointer">
+        <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 5 8 12 15 19"></polyline></svg>
+      </button>
+      <span style="font-size: 15px; font-weight: 700">Путешествия</span>
+      <button aria-label="Поделиться" style="width: 44px; height: 44px; border: 0; border-radius: 999px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; padding: 0; cursor: pointer">
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V4"></path><polyline points="7.5 8.5 12 4 16.5 8.5"></polyline><path d="M5 13v5.5A1.5 1.5 0 0 0 6.5 20h11a1.5 1.5 0 0 0 1.5-1.5V13"></path></svg>
+      </button>
+    </div>
+
+    <div style="padding: 0 20px 0 20px; display: flex; align-items: center; gap: 16px">
+      <div style="position: relative; flex: none; width: 88px; height: 88px">
+        <div aria-hidden="true" style="position: absolute; left: -6px; top: -4px; width: 36px; height: 36px; border-radius: 999px; background: #A169F7"></div>
+        <div aria-hidden="true" style="position: absolute; right: -4px; bottom: -2px; width: 28px; height: 28px; border-radius: 999px; background: #FF6163"></div>
+        <div style="position: absolute; left: 6px; top: 6px; width: 76px; height: 76px; box-sizing: border-box; border-radius: 999px; border: 4px solid #FFFFFF; background: #00AAFF; display: flex; align-items: center; justify-content: center; overflow: hidden">
+          <span aria-hidden="true" style="position: absolute; right: -20px; bottom: -24px; width: 52px; height: 52px; border-radius: 999px; background: #97CF26"></span>
+          <span style="position: relative; font-size: 34px; line-height: 1; font-weight: 800; letter-spacing: -0.02em; color: #000000">М</span>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <h1 style="margin: 0; font-size: 30px; line-height: 1.05; font-weight: 800; letter-spacing: -0.02em">Марина</h1>
+        <span style="align-self: flex-start; height: 30px; padding: 0 12px 0 8px; border-radius: 999px; background: #F1E9FE; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="#A169F7" stroke="none"><path d="M12 2 l2.9 2.1 3.6 0 1.1 3.4 2.9 2.1 -1.1 3.4 1.1 3.4 -2.9 2.1 -1.1 3.4 -3.6 0 L12 24 9.1 21.9 5.5 21.9 4.4 18.5 1.5 16.4 2.6 13 1.5 9.6 4.4 7.5 5.5 4.1 9.1 4.1 z"></path></svg>
+          Знаток Казани
+        </span>
+        <span style="font-size: 13px; font-weight: 600; color: #6B6F76">Пишет только после брони на Авито</span>
+      </div>
+    </div>
+
+    <ul aria-label="Статистика" style="list-style: none; margin: 18px 16px 0 16px; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px">
+      <li style="border-radius: 16px; background: #F2F3F5; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px">
+        <span style="font-size: 22px; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em">214</span>
+        <span style="font-size: 12px; line-height: 1.25; font-weight: 600; color: #6B6F76">отметили полезным</span>
+      </li>
+      <li style="border-radius: 16px; background: #F2F3F5; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px">
+        <span style="font-size: 22px; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em">9</span>
+        <span style="font-size: 12px; line-height: 1.25; font-weight: 600; color: #6B6F76">городов на карте</span>
+      </li>
+      <li style="border-radius: 16px; background: #F2F3F5; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px">
+        <span style="font-size: 22px; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em">31</span>
+        <span style="font-size: 12px; line-height: 1.25; font-weight: 600; color: #6B6F76">совет</span>
+      </li>
+    </ul>
+
+    <div style="margin: 14px 0 0 0; padding: 0 16px; display: flex; flex-direction: column; gap: 6px">
+      <h2 style="margin: 0 4px; font-size: 15px; line-height: 1.2; font-weight: 800">Карта Марины</h2>
+      <ul aria-label="Города на карте" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 6px">
+        <li style="height: 32px; padding: 0 10px 0 6px; border-radius: 999px; background: #E5F6FF; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 800"><span aria-hidden="true" style="width: 18px; height: 18px; border-radius: 999px; background: #00AAFF"></span>Казань</li>
+        <li style="height: 32px; padding: 0 10px 0 6px; border-radius: 999px; background: #F2F3F5; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700"><span aria-hidden="true" style="width: 18px; height: 18px; border-radius: 999px; background: #97CF26"></span>Сочи</li>
+        <li style="height: 32px; padding: 0 10px 0 6px; border-radius: 999px; background: #F2F3F5; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700"><span aria-hidden="true" style="width: 18px; height: 18px; border-radius: 999px; background: #FF6163"></span>Калининград</li>
+        <li style="height: 32px; padding: 0 10px; border-radius: 999px; background: #F2F3F5; display: inline-flex; align-items: center; font-size: 13px; font-weight: 700">+6</li>
+      </ul>
+    </div>
+
+    <div style="margin: 16px 20px 0 20px; display: flex; flex-direction: column; gap: 6px">
+      <div style="display: flex; align-items: center; justify-content: space-between">
+        <h2 style="margin: 0; font-size: 18px; line-height: 1.1; font-weight: 800; letter-spacing: -0.01em">Советы по Казани</h2>
+        <a href="#" tabindex="-1" style="height: 44px; margin: -12px 0; display: flex; align-items: center; font-size: 14px; font-weight: 700; text-decoration: none">Все 5</a>
+      </div>
+      <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; background: #F0F8E0; border-radius: 999px; padding: 4px 10px 4px 8px; font-size: 12px; font-weight: 600; line-height: 16px">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 l7 3 v5 c0 4.5 -3 8 -7 10 c-4 -2 -7 -5.5 -7 -10 V6 z"></path><path d="M8.8 12 l2.2 2.2 4.2 -4.4"></path></svg>
+          Жила по брони на Авито, 12-15 августа
+        </span>
+    </div>
+
+    <div style="margin: 8px 16px 0 16px; display: flex; flex-direction: column; gap: 8px">
+      <article style="border-radius: 16px; border: 1px solid #E6E8EB; padding: 10px 12px 12px 14px; display: flex; flex-direction: column; gap: 6px">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+          <span style="flex-shrink: 0; background: #E5F6FF; border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; line-height: 16px">Где жить</span>
+          <button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; display: inline-flex; align-items: center; gap: 6px; border: 1.5px solid #E6E8EB; background: #FFFFFF; border-radius: 999px; padding: 0 12px; font-family: inherit; font-size: 13px; font-weight: 700; color: #000000; cursor: pointer">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10 v10 H4 V10 z"></path><path d="M7 10 l4 -7 a2 2 0 0 1 3 2 l-1 4 h6 a2 2 0 0 1 2 2.3 l-1.3 7 a2 2 0 0 1 -2 1.7 H7"></path></svg>
+            Полезно 87
+          </button>
+        </div>
+        <p style="margin: 0; font-size: 15px; line-height: 1.35; font-weight: 500">Жить лучше у Баумана: всё пешком, но окна во двор, на улице шумно до ночи.</p>
+      </article>
+      <article style="border-radius: 16px; border: 1px solid #E6E8EB; padding: 10px 12px 12px 14px; display: flex; flex-direction: column; gap: 6px">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+          <span style="flex-shrink: 0; background: #F1E9FE; border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; line-height: 16px">Куда сходить</span>
+          <button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; display: inline-flex; align-items: center; gap: 6px; border: 1.5px solid #E6E8EB; background: #FFFFFF; border-radius: 999px; padding: 0 12px; font-family: inherit; font-size: 13px; font-weight: 700; color: #000000; cursor: pointer">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10 v10 H4 V10 z"></path><path d="M7 10 l4 -7 a2 2 0 0 1 3 2 l-1 4 h6 a2 2 0 0 1 2 2.3 l-1.3 7 a2 2 0 0 1 -2 1.7 H7"></path></svg>
+            Полезно 58
+          </button>
+        </div>
+        <p style="margin: 0; font-size: 15px; line-height: 1.35; font-weight: 500">В Кул Шариф идите утром в будни: днём там очередь из экскурсий.</p>
+      </article>
+    </div>
+
+    <p style="margin: 12px 20px 0 20px; font-size: 12px; line-height: 1.4; font-weight: 600; color: #6B6F76"><b style="font-weight: 800; color: #000000">Как стать знатоком:</b> после брони на Авито оставить 3&nbsp;совета о&nbsp;городе и собрать 20&nbsp;отметок «Полезно».</p>
+  </div>
+
+  <div style="flex: none; padding: 6px 16px 10px 16px; background: #FFFFFF">
+    <button style="width: 100%; height: 52px; border: 0; border-radius: 999px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 16px; font-weight: 800; cursor: pointer">Подписаться на советы Марины</button>
+  </div>
+
+  <nav aria-label="Основная навигация" style="flex: none; height: 72px; box-sizing: border-box; border-top: 1px solid #E6E8EB; background: #FFFFFF; display: grid; grid-template-columns: repeat(5, 1fr); padding: 6px 4px 10px 4px">
+    <a href="#" tabindex="-1" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #0077CC">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0077CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5L12 4l8 6.5V20h-5v-6h-6v6H4z"></path></svg>
+      <span style="font-size: 11px; font-weight: 700">Главная</span>
+    </a>
+    <a href="#" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #6B6F76">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20 s-7.5 -4.6 -7.5 -10.2 A4.3 4.3 0 0 1 12 7.2 a4.3 4.3 0 0 1 7.5 2.6 C19.5 15.4 12 20 12 20 z"></path></svg>
+      <span style="font-size: 11px; font-weight: 600">Избранное</span>
+    </a>
+    <a href="#" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #6B6F76">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+      <span style="font-size: 11px; font-weight: 600">Разместить</span>
+    </a>
+    <a href="#" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #6B6F76">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 3.5V17A2.5 2.5 0 0 1 4 14.5z"></path></svg>
+      <span style="font-size: 11px; font-weight: 600">Сообщения</span>
+    </a>
+    <a href="#" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #6B6F76">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.5" r="3.8"></circle><path d="M4.5 20a7.5 7.5 0 0 1 15 0"></path></svg>
+      <span style="font-size: 11px; font-weight: 600">Профиль</span>
+    </a>
+  </nav>
+</div></div></div>
+  <figcaption><b>G4</b> Профиль автора</figcaption>
+</figure>
+  </div>
+</section>
+<section class="variant" id="map">
+  <div class="vhead">
+    <span class="tag" style="background:#97CF26">3</span>
+    <div>
+      <h2>Карта путешествий: повод зайти между поездками</h2>
+      <p>Карта регионов с прогрессом и планами «хочу поехать». Из пунктирного региона человек попадает в советы, а из советов в бронь.</p>
+    </div>
+  </div>
+  <div class="row">
+<figure class="phone">
+  <div class="bezel"><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #FFFFFF; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
+
+  <main style="flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; gap: 14px; padding: 8px 16px 0 16px">
+
+    <header style="display: flex; flex-direction: column; gap: 4px">
+      <div style="margin: 0 -4px; display: flex; align-items: center; justify-content: space-between">
+        <span aria-hidden="true" style="width: 44px; height: 44px"></span>
+        <span style="font-size: 15px; font-weight: 700">Путешествия</span>
+        <a href="#" tabindex="-1" aria-label="Профиль Арсения" style="flex: none; width: 44px; height: 44px; position: relative; border-radius: 999px; overflow: hidden; display: block; text-decoration: none">
+          <svg aria-hidden="true" width="44" height="44" viewBox="0 0 44 44" style="position: absolute; inset: 0"><circle cx="22" cy="22" r="22" fill="#00AAFF"></circle><circle cx="40" cy="6" r="14" fill="#97CF26"></circle><circle cx="4" cy="42" r="12" fill="#A169F7"></circle><circle cx="22" cy="22" r="13" fill="#FFFFFF"></circle></svg>
+          <span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800; color: #000000">А</span>
+        </a>
+      </div>
+      <h1 style="margin: 0; font-size: 28px; line-height: 1.05; font-weight: 800; letter-spacing: -0.02em">Моя карта путешествий</h1>
+    </header>
+
+    <section aria-label="Прогресс" style="background: #E5F6FF; border-radius: 16px; padding: 12px 14px 14px 14px; display: flex; flex-direction: column; gap: 10px">
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+        <span style="font-size: 18px; font-weight: 800; letter-spacing: -0.01em">4 из 89 регионов</span>
+        <span style="display: flex; align-items: center; gap: 6px; background: #FFFFFF; border-radius: 999px; padding: 6px 12px 6px 10px; font-size: 13px; font-weight: 700">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="8.5" width="17" height="4" rx="1"></rect><path d="M5 12.5V20h14v-7.5"></path><line x1="12" y1="8.5" x2="12" y2="20"></line><path d="M12 8.5c-1.5-3.5-5.5-3.5-5.5-1.2 0 1.2 2 1.2 5.5 1.2zM12 8.5c1.5-3.5 5.5-3.5 5.5-1.2 0 1.2-2 1.2-5.5 1.2z"></path></svg>600 ₽ на брони
+        </span>
+      </div>
+      <div role="progressbar" aria-label="Регионы на карте" aria-valuemin="0" aria-valuemax="89" aria-valuenow="4" style="height: 6px; border-radius: 999px; background: #FFFFFF; overflow: hidden">
+        <div style="width: 6%; height: 6px; border-radius: 999px; background: #000000"></div>
+      </div>
+    </section>
+
+    <section aria-label="Карта" style="border: 1px solid #E6E8EB; border-radius: 20px; padding: 8px 7px 12px 7px; display: flex; flex-direction: column; gap: 6px">
+      <svg role="img" aria-label="Карта России: посещены Москва, Санкт-Петербург, Казань, Сочи; в планах Калининград и Алтай" width="340" height="196" viewBox="0 0 340 196" style="display: block">
+<polygon points="151.0,18.9 157.1,22.4 157.1,29.6 151.0,33.1 144.8,29.6 144.8,22.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="167.1,18.9 173.2,22.4 173.2,29.6 167.1,33.1 160.9,29.6 160.9,22.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="183.2,18.9 189.3,22.4 189.3,29.6 183.2,33.1 177.0,29.6 177.0,22.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="199.3,18.9 205.4,22.4 205.4,29.6 199.3,33.1 193.1,29.6 193.1,22.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="94.6,32.9 100.7,36.4 100.7,43.5 94.6,47.1 88.4,43.5 88.4,36.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="110.7,32.9 116.9,36.4 116.9,43.5 110.7,47.1 104.6,43.5 104.6,36.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="126.8,32.9 133.0,36.4 133.0,43.5 126.8,47.1 120.7,43.5 120.7,36.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="142.9,32.9 149.1,36.4 149.1,43.5 142.9,47.1 136.8,43.5 136.8,36.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="159.0,32.9 165.2,36.4 165.2,43.5 159.0,47.1 152.9,43.5 152.9,36.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="175.1,32.9 181.3,36.4 181.3,43.5 175.1,47.1 169.0,43.5 169.0,36.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="191.2,32.9 197.4,36.4 197.4,43.5 191.2,47.1 185.1,43.5 185.1,36.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="207.4,32.9 213.5,36.4 213.5,43.5 207.4,47.1 201.2,43.5 201.2,36.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="223.5,32.9 229.6,36.4 229.6,43.5 223.5,47.1 217.3,43.5 217.3,36.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="271.8,32.9 277.9,36.4 277.9,43.5 271.8,47.1 265.6,43.5 265.6,36.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="287.9,32.9 294.0,36.4 294.0,43.5 287.9,47.1 281.7,43.5 281.7,36.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="54.3,46.8 60.5,50.4 60.5,57.5 54.3,61.0 48.2,57.5 48.2,50.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="70.4,46.8 76.6,50.4 76.6,57.5 70.4,61.0 64.3,57.5 64.3,50.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="86.5,46.8 92.7,50.4 92.7,57.5 86.5,61.0 80.4,57.5 80.4,50.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="102.6,46.8 108.8,50.4 108.8,57.5 102.6,61.0 96.5,57.5 96.5,50.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="118.8,46.8 124.9,50.4 124.9,57.5 118.8,61.0 112.6,57.5 112.6,50.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="134.9,46.8 141.0,50.4 141.0,57.5 134.9,61.0 128.7,57.5 128.7,50.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="151.0,46.8 157.1,50.4 157.1,57.5 151.0,61.0 144.8,57.5 144.8,50.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="167.1,46.8 173.2,50.4 173.2,57.5 167.1,61.0 160.9,57.5 160.9,50.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="183.2,46.8 189.3,50.4 189.3,57.5 183.2,61.0 177.0,57.5 177.0,50.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="199.3,46.8 205.4,50.4 205.4,57.5 199.3,61.0 193.1,57.5 193.1,50.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="215.4,46.8 221.6,50.4 221.6,57.5 215.4,61.0 209.3,57.5 209.3,50.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="231.5,46.8 237.7,50.4 237.7,57.5 231.5,61.0 225.4,57.5 225.4,50.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="247.6,46.8 253.8,50.4 253.8,57.5 247.6,61.0 241.5,57.5 241.5,50.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="263.7,46.8 269.9,50.4 269.9,57.5 263.7,61.0 257.6,57.5 257.6,50.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="279.8,46.8 286.0,50.4 286.0,57.5 279.8,61.0 273.7,57.5 273.7,50.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="295.9,46.8 302.1,50.4 302.1,57.5 295.9,61.0 289.8,57.5 289.8,50.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="46.3,60.7 52.4,64.3 52.4,71.4 46.3,74.9 40.1,71.4 40.1,64.3" fill="#A169F7" stroke="#A169F7" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="62.4,60.7 68.5,64.3 68.5,71.4 62.4,74.9 56.2,71.4 56.2,64.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="78.5,60.7 84.6,64.3 84.6,71.4 78.5,74.9 72.3,71.4 72.3,64.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="94.6,60.7 100.7,64.3 100.7,71.4 94.6,74.9 88.4,71.4 88.4,64.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="110.7,60.7 116.9,64.3 116.9,71.4 110.7,74.9 104.6,71.4 104.6,64.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="126.8,60.7 133.0,64.3 133.0,71.4 126.8,74.9 120.7,71.4 120.7,64.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="142.9,60.7 149.1,64.3 149.1,71.4 142.9,74.9 136.8,71.4 136.8,64.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="159.0,60.7 165.2,64.3 165.2,71.4 159.0,74.9 152.9,71.4 152.9,64.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="175.1,60.7 181.3,64.3 181.3,71.4 175.1,74.9 169.0,71.4 169.0,64.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="191.2,60.7 197.4,64.3 197.4,71.4 191.2,74.9 185.1,71.4 185.1,64.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="207.4,60.7 213.5,64.3 213.5,71.4 207.4,74.9 201.2,71.4 201.2,64.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="223.5,60.7 229.6,64.3 229.6,71.4 223.5,74.9 217.3,71.4 217.3,64.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="239.6,60.7 245.7,64.3 245.7,71.4 239.6,74.9 233.4,71.4 233.4,64.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="255.7,60.7 261.8,64.3 261.8,71.4 255.7,74.9 249.5,71.4 249.5,64.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="271.8,60.7 277.9,64.3 277.9,71.4 271.8,74.9 265.6,71.4 265.6,64.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="287.9,60.7 294.0,64.3 294.0,71.4 287.9,74.9 281.7,71.4 281.7,64.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="304.0,60.7 310.1,64.3 310.1,71.4 304.0,74.9 297.9,71.4 297.9,64.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="320.1,60.7 326.3,64.3 326.3,71.4 320.1,74.9 314.0,71.4 314.0,64.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="38.2,74.7 44.4,78.3 44.4,85.4 38.2,88.9 32.1,85.4 32.1,78.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="54.3,74.7 60.5,78.3 60.5,85.4 54.3,88.9 48.2,85.4 48.2,78.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="70.4,74.7 76.6,78.3 76.6,85.4 70.4,88.9 64.3,85.4 64.3,78.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="86.5,74.7 92.7,78.3 92.7,85.4 86.5,88.9 80.4,85.4 80.4,78.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="102.6,74.7 108.8,78.3 108.8,85.4 102.6,88.9 96.5,85.4 96.5,78.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="118.8,74.7 124.9,78.3 124.9,85.4 118.8,88.9 112.6,85.4 112.6,78.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="134.9,74.7 141.0,78.3 141.0,85.4 134.9,88.9 128.7,85.4 128.7,78.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="151.0,74.7 157.1,78.3 157.1,85.4 151.0,88.9 144.8,85.4 144.8,78.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="167.1,74.7 173.2,78.3 173.2,85.4 167.1,88.9 160.9,85.4 160.9,78.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="183.2,74.7 189.3,78.3 189.3,85.4 183.2,88.9 177.0,85.4 177.0,78.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="199.3,74.7 205.4,78.3 205.4,85.4 199.3,88.9 193.1,85.4 193.1,78.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="215.4,74.7 221.6,78.3 221.6,85.4 215.4,88.9 209.3,85.4 209.3,78.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="231.5,74.7 237.7,78.3 237.7,85.4 231.5,88.9 225.4,85.4 225.4,78.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="247.6,74.7 253.8,78.3 253.8,85.4 247.6,88.9 241.5,85.4 241.5,78.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="263.7,74.7 269.9,78.3 269.9,85.4 263.7,88.9 257.6,85.4 257.6,78.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="279.8,74.7 286.0,78.3 286.0,85.4 279.8,88.9 273.7,85.4 273.7,78.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="295.9,74.7 302.1,78.3 302.1,85.4 295.9,88.9 289.8,85.4 289.8,78.3" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="14.1,89.0 19.9,92.4 19.9,99.1 14.1,102.5 8.3,99.1 8.3,92.4" fill="#E5F6FF" stroke="#0077CC" stroke-width="1.8" stroke-dasharray="3 2" stroke-linejoin="round"></polygon>
+<polygon points="46.3,88.7 52.4,92.2 52.4,99.3 46.3,102.8 40.1,99.3 40.1,92.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="62.4,88.7 68.5,92.2 68.5,99.3 62.4,102.8 56.2,99.3 56.2,92.2" fill="#00AAFF" stroke="#00AAFF" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="78.5,88.7 84.6,92.2 84.6,99.3 78.5,102.8 72.3,99.3 72.3,92.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="94.6,88.7 100.7,92.2 100.7,99.3 94.6,102.8 88.4,99.3 88.4,92.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="110.7,88.7 116.9,92.2 116.9,99.3 110.7,102.8 104.6,99.3 104.6,92.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="126.8,88.7 133.0,92.2 133.0,99.3 126.8,102.8 120.7,99.3 120.7,92.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="142.9,88.7 149.1,92.2 149.1,99.3 142.9,102.8 136.8,99.3 136.8,92.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="159.0,88.7 165.2,92.2 165.2,99.3 159.0,102.8 152.9,99.3 152.9,92.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="175.1,88.7 181.3,92.2 181.3,99.3 175.1,102.8 169.0,99.3 169.0,92.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="191.2,88.7 197.4,92.2 197.4,99.3 191.2,102.8 185.1,99.3 185.1,92.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="207.4,88.7 213.5,92.2 213.5,99.3 207.4,102.8 201.2,99.3 201.2,92.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="223.5,88.7 229.6,92.2 229.6,99.3 223.5,102.8 217.3,99.3 217.3,92.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="239.6,88.7 245.7,92.2 245.7,99.3 239.6,102.8 233.4,99.3 233.4,92.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="255.7,88.7 261.8,92.2 261.8,99.3 255.7,102.8 249.5,99.3 249.5,92.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="271.8,88.7 277.9,92.2 277.9,99.3 271.8,102.8 265.6,99.3 265.6,92.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="287.9,88.7 294.0,92.2 294.0,99.3 287.9,102.8 281.7,99.3 281.7,92.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="304.0,88.7 310.1,92.2 310.1,99.3 304.0,102.8 297.9,99.3 297.9,92.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="320.1,88.7 326.3,92.2 326.3,99.3 320.1,102.8 314.0,99.3 314.0,92.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="38.2,102.6 44.4,106.2 44.4,113.2 38.2,116.8 32.1,113.2 32.1,106.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="54.3,102.6 60.5,106.2 60.5,113.2 54.3,116.8 48.2,113.2 48.2,106.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="70.4,102.6 76.6,106.2 76.6,113.2 70.4,116.8 64.3,113.2 64.3,106.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="86.5,102.6 92.7,106.2 92.7,113.2 86.5,116.8 80.4,113.2 80.4,106.2" fill="#FF6163" stroke="#FF6163" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="102.6,102.6 108.8,106.2 108.8,113.2 102.6,116.8 96.5,113.2 96.5,106.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="118.8,102.6 124.9,106.2 124.9,113.2 118.8,116.8 112.6,113.2 112.6,106.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="134.9,102.6 141.0,106.2 141.0,113.2 134.9,116.8 128.7,113.2 128.7,106.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="151.0,102.6 157.1,106.2 157.1,113.2 151.0,116.8 144.8,113.2 144.8,106.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="167.1,102.6 173.2,106.2 173.2,113.2 167.1,116.8 160.9,113.2 160.9,106.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="183.2,102.6 189.3,106.2 189.3,113.2 183.2,116.8 177.0,113.2 177.0,106.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="199.3,102.6 205.4,106.2 205.4,113.2 199.3,116.8 193.1,113.2 193.1,106.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="215.4,102.6 221.6,106.2 221.6,113.2 215.4,116.8 209.3,113.2 209.3,106.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="231.5,102.6 237.7,106.2 237.7,113.2 231.5,116.8 225.4,113.2 225.4,106.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="247.6,102.6 253.8,106.2 253.8,113.2 247.6,116.8 241.5,113.2 241.5,106.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="295.9,102.6 302.1,106.2 302.1,113.2 295.9,116.8 289.8,113.2 289.8,106.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="312.1,102.6 318.2,106.2 318.2,113.2 312.1,116.8 305.9,113.2 305.9,106.2" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="46.3,116.6 52.4,120.1 52.4,127.2 46.3,130.8 40.1,127.2 40.1,120.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="62.4,116.6 68.5,120.1 68.5,127.2 62.4,130.8 56.2,127.2 56.2,120.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="78.5,116.6 84.6,120.1 84.6,127.2 78.5,130.8 72.3,127.2 72.3,120.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="94.6,116.6 100.7,120.1 100.7,127.2 94.6,130.8 88.4,127.2 88.4,120.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="110.7,116.6 116.9,120.1 116.9,127.2 110.7,130.8 104.6,127.2 104.6,120.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="126.8,116.6 133.0,120.1 133.0,127.2 126.8,130.8 120.7,127.2 120.7,120.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="142.9,116.6 149.1,120.1 149.1,127.2 142.9,130.8 136.8,127.2 136.8,120.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="159.0,116.6 165.2,120.1 165.2,127.2 159.0,130.8 152.9,127.2 152.9,120.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="175.1,116.6 181.3,120.1 181.3,127.2 175.1,130.8 169.0,127.2 169.0,120.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="191.2,116.6 197.4,120.1 197.4,127.2 191.2,130.8 185.1,127.2 185.1,120.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="207.4,116.6 213.5,120.1 213.5,127.2 207.4,130.8 201.2,127.2 201.2,120.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="223.5,116.6 229.6,120.1 229.6,127.2 223.5,130.8 217.3,127.2 217.3,120.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="239.6,116.6 245.7,120.1 245.7,127.2 239.6,130.8 233.4,127.2 233.4,120.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="255.7,116.6 261.8,120.1 261.8,127.2 255.7,130.8 249.5,127.2 249.5,120.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="320.1,116.6 326.3,120.1 326.3,127.2 320.1,130.8 314.0,127.2 314.0,120.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="38.2,130.5 44.4,134.1 44.4,141.2 38.2,144.7 32.1,141.2 32.1,134.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="54.3,130.5 60.5,134.1 60.5,141.2 54.3,144.7 48.2,141.2 48.2,134.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="70.4,130.5 76.6,134.1 76.6,141.2 70.4,144.7 64.3,141.2 64.3,134.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="86.5,130.5 92.7,134.1 92.7,141.2 86.5,144.7 80.4,141.2 80.4,134.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="102.6,130.5 108.8,134.1 108.8,141.2 102.6,144.7 96.5,141.2 96.5,134.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="151.0,130.5 157.1,134.1 157.1,141.2 151.0,144.7 144.8,141.2 144.8,134.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="167.1,130.9 172.9,134.3 172.9,141.0 167.1,144.3 161.3,141.0 161.3,134.3" fill="#E5F6FF" stroke="#0077CC" stroke-width="1.8" stroke-dasharray="3 2" stroke-linejoin="round"></polygon>
+<polygon points="183.2,130.5 189.3,134.1 189.3,141.2 183.2,144.7 177.0,141.2 177.0,134.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="199.3,130.5 205.4,134.1 205.4,141.2 199.3,144.7 193.1,141.2 193.1,134.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="215.4,130.5 221.6,134.1 221.6,141.2 215.4,144.7 209.3,141.2 209.3,134.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="231.5,130.5 237.7,134.1 237.7,141.2 231.5,144.7 225.4,141.2 225.4,134.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="247.6,130.5 253.8,134.1 253.8,141.2 247.6,144.7 241.5,141.2 241.5,134.1" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="62.4,144.5 68.5,148.0 68.5,155.1 62.4,158.7 56.2,155.1 56.2,148.0" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="78.5,144.5 84.6,148.0 84.6,155.1 78.5,158.7 72.3,155.1 72.3,148.0" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="94.6,144.5 100.7,148.0 100.7,155.1 94.6,158.7 88.4,155.1 88.4,148.0" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="223.5,144.5 229.6,148.0 229.6,155.1 223.5,158.7 217.3,155.1 217.3,148.0" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="239.6,144.5 245.7,148.0 245.7,155.1 239.6,158.7 233.4,155.1 233.4,148.0" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="255.7,144.5 261.8,148.0 261.8,155.1 255.7,158.7 249.5,155.1 249.5,148.0" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="54.3,158.4 60.5,161.9 60.5,169.1 54.3,172.6 48.2,169.1 48.2,161.9" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="70.4,158.4 76.6,161.9 76.6,169.1 70.4,172.6 64.3,169.1 64.3,161.9" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="231.5,158.4 237.7,161.9 237.7,169.1 231.5,172.6 225.4,169.1 225.4,161.9" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="247.6,158.4 253.8,161.9 253.8,169.1 247.6,172.6 241.5,169.1 241.5,161.9" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<polygon points="62.4,172.4 68.5,175.9 68.5,183.0 62.4,186.6 56.2,183.0 56.2,175.9" fill="#97CF26" stroke="#97CF26" stroke-width="2.6" stroke-linejoin="round"></polygon>
+<line x1="46.3" y1="22" x2="46.3" y2="59.8" stroke="#000000" stroke-width="1" stroke-linecap="round"></line><rect x="4" y="2" width="108" height="20" rx="10" fill="#FFFFFF" stroke="#D5D8DD" stroke-width="1"></rect><text x="58.0" y="16" text-anchor="middle" font-family="Manrope, system-ui, sans-serif" font-size="11" font-weight="700" fill="#000000">Санкт-Петербург</text><rect x="74.4" y="69.8" width="56" height="20" rx="10" fill="#FFFFFF" stroke="#D5D8DD" stroke-width="1"></rect><text x="102.4" y="83.8" text-anchor="middle" font-family="Manrope, system-ui, sans-serif" font-size="11" font-weight="700" fill="#000000">Москва</text><rect x="98.5" y="99.7" width="58" height="20" rx="10" fill="#FFFFFF" stroke="#D5D8DD" stroke-width="1"></rect><text x="127.5" y="113.7" text-anchor="middle" font-family="Manrope, system-ui, sans-serif" font-size="11" font-weight="700" fill="#000000">Казань</text><rect x="74.4" y="169.5" width="46" height="20" rx="10" fill="#FFFFFF" stroke="#D5D8DD" stroke-width="1"></rect><text x="97.4" y="183.5" text-anchor="middle" font-family="Manrope, system-ui, sans-serif" font-size="11" font-weight="700" fill="#000000">Сочи</text><rect x="2" y="107.8" width="84" height="20" rx="10" fill="#FFFFFF" stroke="#0077CC" stroke-width="1.2" stroke-dasharray="3 2"></rect><text x="44.0" y="121.8" text-anchor="middle" font-family="Manrope, system-ui, sans-serif" font-size="11" font-weight="700" fill="#000000">Калининград</text><rect x="143.1" y="149.6" width="48" height="20" rx="10" fill="#FFFFFF" stroke="#0077CC" stroke-width="1.2" stroke-dasharray="3 2"></rect><text x="167.1" y="163.6" text-anchor="middle" font-family="Manrope, system-ui, sans-serif" font-size="11" font-weight="700" fill="#000000">Алтай</text>
+</svg>
+      <div style="display: flex; align-items: center; gap: 16px; padding: 0 4px">
+        <span style="display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: #6B6F76">
+          <svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5" fill="#00AAFF"></circle></svg>Был: 4
+        </span>
+        <span style="display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: #6B6F76">
+          <svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="4.6" fill="#FFFFFF" stroke="#0077CC" stroke-width="1.4" stroke-dasharray="2.4 1.6"></circle></svg>Хочу поехать: 2
+        </span>
+        <span style="display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: #6B6F76">
+          <svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5" fill="#E6E8EB"></circle></svg>Ещё 83
+        </span>
+      </div>
+    </section>
+
+    <section aria-labelledby="want-title" style="display: flex; flex-direction: column; gap: 8px">
+      <div style="display: flex; align-items: center; justify-content: space-between">
+        <h2 id="want-title" style="margin: 0; font-size: 18px; font-weight: 800; letter-spacing: -0.01em">Хочу поехать</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px">
+        <a href="#" tabindex="-1" style="text-decoration: none; color: #000000; border-radius: 16px; background: #F1E9FE; padding: 12px; display: flex; flex-direction: column; gap: 6px; position: relative; overflow: hidden">
+          <svg aria-hidden="true" width="64" height="64" viewBox="0 0 64 64" style="position: absolute; right: -14px; top: -14px"><circle cx="32" cy="32" r="32" fill="#A169F7"></circle></svg>
+          <span style="font-size: 16px; font-weight: 800; letter-spacing: -0.01em; position: relative">Калининград</span>
+          <span style="font-size: 13px; font-weight: 600; line-height: 1.3; color: #3D4047; position: relative">18 советов гостей · жильё от 2 900 ₽</span>
+          <span style="display: flex; align-items: center; gap: 4px; font-size: 13px; font-weight: 700; position: relative; margin-top: 2px">Советы и жильё<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+        </a>
+        <a href="#" tabindex="-1" style="text-decoration: none; color: #000000; border-radius: 16px; background: #F0F8E0; padding: 12px; display: flex; flex-direction: column; gap: 6px; position: relative; overflow: hidden">
+          <svg aria-hidden="true" width="64" height="64" viewBox="0 0 64 64" style="position: absolute; right: -14px; top: -14px"><circle cx="32" cy="32" r="32" fill="#97CF26"></circle></svg>
+          <span style="font-size: 16px; font-weight: 800; letter-spacing: -0.01em; position: relative">Алтай</span>
+          <span style="font-size: 13px; font-weight: 600; line-height: 1.3; color: #3D4047; position: relative">12 советов гостей · жильё от 2 400 ₽</span>
+          <span style="display: flex; align-items: center; gap: 4px; font-size: 13px; font-weight: 700; position: relative; margin-top: 2px">Советы и жильё<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+        </a>
+      </div>
+    </section>
+
+    <section aria-labelledby="friends-title" style="display: flex; flex-direction: column; gap: 6px">
+      <h2 id="friends-title" style="margin: 0; font-size: 13px; font-weight: 700; color: #6B6F76">Новое на карте друзей</h2>
+      <a href="#" tabindex="-1" style="text-decoration: none; color: #000000; display: flex; align-items: center; gap: 10px; min-height: 44px">
+        <span style="flex: none; width: 36px; height: 36px; position: relative; border-radius: 999px; overflow: hidden; display: block">
+          <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36" style="position: absolute; inset: 0"><circle cx="18" cy="18" r="18" fill="#FF6163"></circle><circle cx="34" cy="34" r="12" fill="#A169F7"></circle><circle cx="18" cy="18" r="10.5" fill="#FFFFFF"></circle></svg>
+          <span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800">И</span>
+        </span>
+        <span style="flex: 1; font-size: 14px; font-weight: 600; line-height: 1.3; text-wrap: balance">Илья отметил Калининград и оставил 4 совета</span>
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M9 6l6 6-6 6"></path></svg>
+      </a>
+    </section>
+
+    <button style="flex: none; margin: auto 0 12px 0; height: 52px; border: 0; border-radius: 999px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"></circle><line x1="16" y1="16" x2="20" y2="20"></line></svg>
+      Найти жильё на Алтае
+    </button>
+
+  </main>
+
+  <nav aria-label="Основная навигация" style="flex: none; height: 72px; box-sizing: border-box; border-top: 1px solid #E6E8EB; background: #FFFFFF; display: grid; grid-template-columns: repeat(5, 1fr); padding: 6px 4px 10px 4px">
+    <a href="#" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #6B6F76">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5L12 4l8 6.5V20h-5v-6h-6v6H4z"></path></svg>
+      <span style="font-size: 11px; font-weight: 600">Главная</span>
+    </a>
+    <a href="#" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #6B6F76">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20 s-7.5 -4.6 -7.5 -10.2 A4.3 4.3 0 0 1 12 7.2 a4.3 4.3 0 0 1 7.5 2.6 C19.5 15.4 12 20 12 20 z"></path></svg>
+      <span style="font-size: 11px; font-weight: 600">Избранное</span>
+    </a>
+    <a href="#" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #6B6F76">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+      <span style="font-size: 11px; font-weight: 600">Разместить</span>
+    </a>
+    <a href="#" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #6B6F76">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 3.5V17A2.5 2.5 0 0 1 4 14.5z"></path></svg>
+      <span style="font-size: 11px; font-weight: 600">Сообщения</span>
+    </a>
+    <a href="#" tabindex="-1" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #0077CC">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0077CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.5" r="3.8"></circle><path d="M4.5 20a7.5 7.5 0 0 1 15 0"></path></svg>
+      <span style="font-size: 11px; font-weight: 700">Профиль</span>
+    </a>
+  </nav>
+</div></div></div>
+  <figcaption><b>G5</b> Моя карта</figcaption>
+</figure>
+<figure class="phone">
+  <div class="bezel"><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #FFFFFF; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
+
+  <svg aria-hidden="true" width="120" height="84" viewBox="0 0 120 84" style="position: absolute; right: 0; top: 60px"><circle cx="120" cy="40" r="44" fill="#A169F7"></circle><circle cx="52" cy="18" r="13" fill="#00AAFF"></circle><circle cx="64" cy="66" r="8" fill="#97CF26"></circle></svg>
+
+  <main style="flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; gap: 14px; padding: 8px 16px 0 16px; position: relative">
+
+    <div style="margin: 0 -4px; display: flex; align-items: center; justify-content: space-between">
+      <button type="button" aria-label="Назад к моей карте" style="width: 44px; height: 44px; border: 0; border-radius: 999px; background: transparent; display: flex; align-items: center; justify-content: center; padding: 0; cursor: pointer">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5 l-7 7 7 7"></path></svg>
+      </button>
+      <span style="font-size: 15px; font-weight: 700">Путешествия</span>
+      <button type="button" aria-label="Моя карта" style="width: 44px; height: 44px; border: 0; border-radius: 999px; background: transparent; display: flex; align-items: center; justify-content: center; padding: 0; cursor: pointer">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 L3 6.5 V20 l6 -2.5 6 2.5 6 -2.5 V4 l-6 2.5 z"></path><line x1="9" y1="4" x2="9" y2="17.5"></line><line x1="15" y1="6.5" x2="15" y2="20"></line></svg>
+      </button>
+    </div>
+
+    <header style="display: flex; flex-direction: column; gap: 6px; margin-top: -6px">
+      <span style="align-self: flex-start; display: flex; align-items: center; gap: 6px; height: 28px; box-sizing: border-box; padding: 0 12px 0 8px; border-radius: 999px; background: #E5F6FF; border: 1.5px dashed #0077CC; font-size: 13px; font-weight: 700">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0077CC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>В ваших планах
+      </span>
+      <h1 style="margin: 0; font-size: 34px; line-height: 1.05; font-weight: 800; letter-spacing: -0.02em">Калининград</h1>
+      <span style="font-size: 13px; font-weight: 600; color: #6B6F76">18 советов гостей · жильё от 2 900 ₽</span>
+    </header>
+
+    <section aria-labelledby="tips-title" style="display: flex; flex-direction: column; gap: 8px">
+      <div style="display: flex; align-items: center; justify-content: space-between">
+        <h2 id="tips-title" style="margin: 0; font-size: 18px; font-weight: 800; letter-spacing: -0.01em">Лучшие советы гостей</h2>
+        <a href="#" tabindex="-1" style="height: 44px; margin: -12px 0; display: flex; align-items: center; font-size: 14px; font-weight: 700; text-decoration: none; color: #0077CC">Все 18</a>
+      </div>
+      <article style="border: 1px solid #E6E8EB; border-radius: 16px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px">
+        <div style="display: flex; align-items: center; gap: 8px">
+          <span style="position: relative; width: 36px; height: 36px; flex-shrink: 0; border-radius: 999px; background: #F1E9FE; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800">
+            <svg aria-hidden="true" style="position: absolute; right: -8px; top: -8px" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="11" fill="#00AAFF"></circle></svg>
+            <span style="position: relative">О</span>
+          </span>
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 15px; font-weight: 700; line-height: 1.2">Олег</span>
+            <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 4px; background: #F1E9FE; border-radius: 999px; padding: 2px 7px 2px 4px; font-size: 11px; font-weight: 700; line-height: 16px; white-space: nowrap"><svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="#A169F7" stroke="none"><path d="M12 2 l2.9 2.1 3.6 0 1.1 3.4 2.9 2.1 -1.1 3.4 1.1 3.4 -2.9 2.1 -1.1 3.4 -3.6 0 L12 24 9.1 21.9 5.5 21.9 4.4 18.5 1.5 16.4 2.6 13 1.5 9.6 4.4 7.5 5.5 4.1 9.1 4.1 z"></path></svg>Знаток Калининграда</span>
+          </div>
+          <button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; display: inline-flex; align-items: center; gap: 6px; border: 1.5px solid #E6E8EB; background: #FFFFFF; border-radius: 999px; padding: 0 11px; font-family: inherit; font-size: 13px; font-weight: 700; color: #000000; cursor: pointer">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10 v10 H4 V10 z"></path><path d="M7 10 l4 -7 a2 2 0 0 1 3 2 l-1 4 h6 a2 2 0 0 1 2 2.3 l-1.3 7 a2 2 0 0 1 -2 1.7 H7"></path></svg>
+            Полезно 96
+          </button>
+        </div>
+        <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; background: #F0F8E0; border-radius: 999px; padding: 4px 10px 4px 8px; font-size: 12px; font-weight: 600; line-height: 16px">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 l7 3 v5 c0 4.5 -3 8 -7 10 c-4 -2 -7 -5.5 -7 -10 V6 z"></path><path d="M8.8 12 l2.2 2.2 4.2 -4.4"></path></svg>
+          Жил по брони на Авито, 3-7 июля
+        </span>
+        <p style="margin: 0; font-size: 15px; font-weight: 500; line-height: 1.35">Живите у Рыбной деревни: до острова Канта и вокзала пешком, вечером тихо.</p>
+      </article>
+      <article style="border: 1px solid #E6E8EB; border-radius: 16px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px">
+        <div style="display: flex; align-items: center; gap: 8px">
+          <span style="position: relative; width: 36px; height: 36px; flex-shrink: 0; border-radius: 999px; background: #F0F8E0; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800">
+            <svg aria-hidden="true" style="position: absolute; left: -8px; bottom: -8px" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="11" fill="#FF6163"></circle></svg>
+            <span style="position: relative">С</span>
+          </span>
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 15px; font-weight: 700; line-height: 1.2">Света</span>
+            <span style="font-size: 12px; font-weight: 600; line-height: 1.2; color: #6B6F76">Ездила с подругой</span>
+          </div>
+          <button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; display: inline-flex; align-items: center; gap: 6px; border: 1.5px solid #E6E8EB; background: #FFFFFF; border-radius: 999px; padding: 0 11px; font-family: inherit; font-size: 13px; font-weight: 700; color: #000000; cursor: pointer">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10 v10 H4 V10 z"></path><path d="M7 10 l4 -7 a2 2 0 0 1 3 2 l-1 4 h6 a2 2 0 0 1 2 2.3 l-1.3 7 a2 2 0 0 1 -2 1.7 H7"></path></svg>
+            Полезно 41
+          </button>
+        </div>
+        <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; background: #F0F8E0; border-radius: 999px; padding: 4px 10px 4px 8px; font-size: 12px; font-weight: 600; line-height: 16px">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 l7 3 v5 c0 4.5 -3 8 -7 10 c-4 -2 -7 -5.5 -7 -10 V6 z"></path><path d="M8.8 12 l2.2 2.2 4.2 -4.4"></path></svg>
+          Жила по брони на Авито, 14-18 сентября
+        </span>
+        <p style="margin: 0; font-size: 15px; font-weight: 500; line-height: 1.35">На Куршскую косу езжайте в будни с утра: в&nbsp;выходные на въезде очередь до часа.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="stay-title" style="display: flex; flex-direction: column; gap: 10px">
+      <h2 id="stay-title" style="margin: 0; font-size: 18px; font-weight: 800; letter-spacing: -0.01em">Где жили авторы советов</h2>
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <article style="border: 1px solid #E6E8EB; border-radius: 16px; padding: 8px 10px 8px 8px; display: flex; align-items: center; gap: 10px">
+          <div style="flex: none; width: 56px; height: 56px; border-radius: 12px; background: #F2F3F5; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center">
+            <svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40" style="position: absolute; right: -14px; bottom: -14px"><circle cx="20" cy="20" r="20" fill="#A169F7"></circle></svg>
+            <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="position: relative"><path d="M4 20V9l8-5 8 5v11"></path><path d="M9.5 20v-6h5v6"></path><line x1="3" y1="20" x2="21" y2="20"></line></svg>
+          </div>
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 12px; font-weight: 600; color: #6B6F76">Здесь жил Олег</span>
+            <span style="font-size: 14px; font-weight: 700; line-height: 1.25">Лофт у Рыбной деревни</span>
+            <span style="font-size: 15px; font-weight: 800">2 900 ₽ <span style="font-size: 12px; font-weight: 600; color: #6B6F76">за ночь</span></span>
+          </div>
+          <a href="#" tabindex="-1" style="flex: none; height: 44px; box-sizing: border-box; padding: 0 14px; border-radius: 999px; border: 1.5px solid #000000; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #000000; text-decoration: none">Смотреть</a>
+        </article>
+        <article style="border: 1px solid #E6E8EB; border-radius: 16px; padding: 8px 10px 8px 8px; display: flex; align-items: center; gap: 10px">
+          <div style="flex: none; width: 56px; height: 56px; border-radius: 12px; background: #F2F3F5; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center">
+            <svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40" style="position: absolute; right: -14px; bottom: -14px"><circle cx="20" cy="20" r="20" fill="#97CF26"></circle></svg>
+            <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="position: relative"><rect x="5" y="3.5" width="14" height="16.5" rx="1"></rect><line x1="9" y1="8" x2="10" y2="8"></line><line x1="14" y1="8" x2="15" y2="8"></line><line x1="9" y1="12" x2="10" y2="12"></line><line x1="14" y1="12" x2="15" y2="12"></line><path d="M10.5 20v-3.5h3V20"></path></svg>
+          </div>
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 12px; font-weight: 600; color: #6B6F76">Здесь жила Света</span>
+            <span style="font-size: 14px; font-weight: 700; line-height: 1.25">Квартира в Амалиенау</span>
+            <span style="font-size: 15px; font-weight: 800">3 600 ₽ <span style="font-size: 12px; font-weight: 600; color: #6B6F76">за ночь</span></span>
+          </div>
+          <a href="#" tabindex="-1" style="flex: none; height: 44px; box-sizing: border-box; padding: 0 14px; border-radius: 999px; border: 1.5px solid #000000; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #000000; text-decoration: none">Смотреть</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <div style="flex: none; padding: 10px 16px 16px 16px; border-top: 1px solid #E6E8EB; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+    <span style="display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 13px; font-weight: 600; color: #3D4047">
+      <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3D4047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="8.5" width="17" height="4" rx="1"></rect><path d="M5 12.5V20h14v-7.5"></path><line x1="12" y1="8.5" x2="12" y2="20"></line><path d="M12 8.5c-1.5-3.5-5.5-3.5-5.5-1.2 0 1.2 2 1.2 5.5 1.2zM12 8.5c1.5-3.5 5.5-3.5 5.5-1.2 0 1.2-2 1.2-5.5 1.2z"></path></svg>600 ₽ бонусов спишутся при брони
+    </span>
+    <button style="width: 100%; height: 52px; border: 0; border-radius: 999px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5.5" width="16" height="14.5" rx="2"></rect><line x1="4" y1="10" x2="20" y2="10"></line><line x1="8.5" y1="3.5" x2="8.5" y2="7"></line><line x1="15.5" y1="3.5" x2="15.5" y2="7"></line></svg>
+      Выбрать даты
+    </button>
+  </div>
+</div></div></div>
+  <figcaption><b>G6</b> Город из планов</figcaption>
+</figure>
+  </div>
+</section>
+<footer>Статичные макеты, данные в интерфейсе вымышлены.</footer>
+</div>
+</body>
+</html>
