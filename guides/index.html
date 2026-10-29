@@ -16,7 +16,7 @@
 html { scroll-behavior: smooth; }
 body { margin:0; background:var(--bg); color:var(--ink); font-family:Manrope, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
 .wrap { max-width:1440px; margin:0 auto; padding:0 24px 80px; }
-header { padding:56px 0 24px; display:flex; flex-wrap:wrap; gap:24px 40px; align-items:flex-end; justify-content:space-between; }
+.wrap > header { padding:56px 0 24px; display:flex; flex-wrap:wrap; gap:24px 40px; align-items:flex-end; justify-content:space-between; }
 .logo { display:flex; align-items:center; gap:16px; }
 .logo svg { flex:none; }
 h1.title { margin:0; font-size:clamp(32px,5vw,56px); line-height:1; font-weight:800; letter-spacing:-0.03em; }
@@ -32,7 +32,7 @@ nav.jump i { width:10px; height:10px; border-radius:50%; display:inline-block; }
 .vhead p { margin:0; font-size:16px; line-height:1.45; font-weight:500; color:var(--muted); }
 .row { display:flex; flex-wrap:wrap; justify-content:center; gap:40px 28px; }
 .phone { margin:0; display:flex; flex-direction:column; align-items:center; gap:14px; }
-.iphone { position:relative; width:410px; height:926px; padding:7px; border:2px solid transparent; border-radius:64px; background:linear-gradient(#050506,#050506) padding-box, linear-gradient(140deg,#d4d6da,#7c7f85 22%,#45474c 48%,#8a8d93 74%,#cfd1d5) border-box; box-shadow:0 40px 80px -30px rgba(0,0,0,.45), inset 0 0 0 1px #1c1d20; }
+.iphone { position:relative; width:408px; height:862px; padding:7px; border:2px solid transparent; border-radius:64px; background:linear-gradient(#050506,#050506) padding-box, linear-gradient(140deg,#d4d6da,#7c7f85 22%,#45474c 48%,#8a8d93 74%,#cfd1d5) border-box; box-shadow:0 40px 80px -30px rgba(0,0,0,.45), inset 0 0 0 1px #1c1d20; }
 .b { position:absolute; width:3px; background:linear-gradient(90deg,#9a9da2,#5d6065); }
 .b1, .b2, .b3 { left:-5px; border-radius:2px 0 0 2px; }
 .b4 { right:-5px; border-radius:0 2px 2px 0; background:linear-gradient(90deg,#5d6065,#9a9da2); }
@@ -40,29 +40,28 @@ nav.jump i { width:10px; height:10px; border-radius:50%; display:inline-block; }
 .b2 { top:206px; height:56px; }
 .b3 { top:274px; height:56px; }
 .b4 { top:224px; height:92px; }
-.glass { position:relative; width:392px; height:908px; border-radius:55px; overflow:hidden; background:#fff; }
-.sb { height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 30px 0 52px; font-family:-apple-system, "SF Pro Text", Manrope, system-ui, sans-serif; font-weight:600; font-size:17px; letter-spacing:-.01em; position:relative; }
+.glass { position:relative; width:390px; height:844px; border-radius:55px; overflow:hidden; background:#fff; }
+.sb { position:absolute; top:0; left:0; right:0; z-index:2; height:54px; background:transparent; pointer-events:none; display:flex; align-items:center; justify-content:space-between; padding:0 30px 0 52px; font-family:-apple-system, "SF Pro Text", Manrope, system-ui, sans-serif; font-weight:600; font-size:17px; letter-spacing:-.01em; }
 .sb .t { width:40px; text-align:center; line-height:1; }
 .sb .ic { display:flex; gap:6px; align-items:center; }
 .sb .ic svg { display:block; flex:none; }
 .island { position:absolute; left:50%; top:11px; transform:translateX(-50%); width:110px; height:32px; border-radius:16px; background:#000; }
-.home { position:absolute; left:50%; bottom:8px; transform:translateX(-50%); width:136px; height:5px; border-radius:3px; background:#000; opacity:.85; }
-.screen { width:390px; height:844px; margin-left:1px; overflow:hidden; background:#fff; position:relative; }
+.home { position:absolute; z-index:2; left:50%; bottom:8px; transform:translateX(-50%); width:136px; height:5px; border-radius:3px; opacity:.85; pointer-events:none; }
+.screen { width:390px; height:844px; overflow:hidden; background:#fff; position:relative; }
 .screen button, .screen a, .screen input, .screen label { cursor:default; }
 figcaption { font-size:15px; font-weight:600; color:var(--muted); }
 figcaption b { color:#000; font-weight:800; margin-right:4px; }
-footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted); font-weight:500; }
-@media (max-width: 1430px) { .phone { zoom:.86; } }
-@media (max-width: 1260px) { .phone { zoom:.74; } }
-@media (max-width: 1090px) { .phone { zoom:.8; } }
+.wrap > footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted); font-weight:500; }
+@media (max-width: 1000px) { .phone { zoom:.8; } }
 @media (max-width: 520px) {
   .wrap { padding:0 16px 48px; }
-  header { padding-top:32px; }
+  .wrap > header { padding-top:32px; }
   .variant { padding:28px 0 36px; border-radius:24px; }
   .vhead { padding:0 16px; }
-  .phone { zoom:.8; }
+  .phone { zoom:.85; }
 }
-@media (max-width: 370px) { .phone { zoom:.72; } }
+@media (max-width: 370px) { .phone { zoom:.76; } }
+@media (max-width: 340px) { .phone { zoom:.7; } }
 </style>
 </head>
 <body>
@@ -91,15 +90,15 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
   </div>
   <div class="row">
 <figure class="phone">
-  <div class="iphone"><i class="b b1"></i><i class="b b2"></i><i class="b b3"></i><i class="b b4"></i><div class="glass"><div class="sb" style="background:#f2f3f5;color:#000"><span class="t">9:41</span><span class="island"></span><span class="ic"><svg class="cell" width="17" height="11" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx=".9" fill="currentColor"/><rect x="4.67" y="5" width="3" height="6" rx=".9" fill="currentColor"/><rect x="9.33" y="2.5" width="3" height="8.5" rx=".9" fill="currentColor"/><rect x="14" y="0" width="3" height="11" rx=".9" fill="currentColor"/></svg><svg class="wifi" width="16" height="12" viewBox="0 0 16 12" overflow="visible" aria-hidden="true"><path d="M8 11.6L5.95 9.55A2.9 2.9 0 0 1 10.05 9.55ZM3.05 6.65A7 7 0 0 1 12.95 6.65L11.82 7.78A5.4 5.4 0 0 0 4.18 7.78ZM0.36 3.96A10.8 10.8 0 0 1 15.64 3.96L14.58 5.02A9.3 9.3 0 0 0 1.42 5.02Z" fill="currentColor" stroke="currentColor" stroke-width=".8" stroke-linejoin="round"/></svg><svg class="bat" width="26" height="12" viewBox="0 0 26 12" aria-hidden="true"><rect x=".5" y=".5" width="22" height="11" rx="3.3" fill="none" stroke="currentColor" opacity=".35"/><rect x="2" y="2" width="19" height="8" rx="1.9" fill="currentColor"/><path d="M24 4v4c.8-.3 1.4-1.1 1.4-2S24.8 4.3 24 4Z" fill="currentColor" opacity=".4"/></svg></span></div><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #FFFFFF; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
+  <div class="iphone"><i class="b b1"></i><i class="b b2"></i><i class="b b3"></i><i class="b b4"></i><div class="glass"><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #FFFFFF; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
 
   <div style="flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column">
 
     <!-- Фото -->
-    <section aria-label="Фото жилья" style="position: relative; height: 204px; flex-shrink: 0; background: #F2F3F5; overflow: hidden">
+    <section aria-label="Фото жилья" style="position: relative; height: 236px; flex-shrink: 0; background: #F2F3F5; overflow: hidden">
       <svg aria-hidden="true" style="position: absolute; right: -40px; top: -50px" width="170" height="170" viewBox="0 0 170 170"><circle cx="85" cy="85" r="85" fill="#E5F6FF"></circle></svg>
       <svg aria-hidden="true" style="position: absolute; left: -30px; bottom: -60px" width="130" height="130" viewBox="0 0 130 130"><circle cx="65" cy="65" r="65" fill="#F0F8E0"></circle></svg>
-      <svg aria-hidden="true" style="position: absolute; left: 50%; top: 34px; margin-left: -90px" width="180" height="120" viewBox="0 0 180 120" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg aria-hidden="true" style="position: absolute; left: 50%; top: 66px; margin-left: -90px" width="180" height="120" viewBox="0 0 180 120" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M30 22 h50 v58 h-50 z" fill="#FFFFFF"></path>
         <line x1="55" y1="22" x2="55" y2="80"></line>
         <line x1="30" y1="50" x2="80" y2="50"></line>
@@ -114,7 +113,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
         <line x1="80" y1="94" x2="80" y2="112"></line>
         <path d="M156 112 v-34 M150 78 h12 l-2 -16 h-8 z" fill="#FFFFFF"></path>
       </svg>
-      <div style="position: absolute; top: 12px; left: 16px; right: 16px; display: flex; justify-content: space-between">
+      <div style="position: absolute; top: 54px; left: 16px; right: 16px; display: flex; justify-content: space-between">
         <button type="button" aria-label="Назад" style="width: 44px; height: 44px; border-radius: 999px; border: none; background: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); cursor: pointer; padding: 0">
           <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5 l-7 7 7 7"></path></svg>
         </button>
@@ -127,18 +126,18 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
           </button>
         </div>
       </div>
-      <div style="position: absolute; bottom: 30px; left: 0; right: 0; display: flex; justify-content: center; gap: 6px" aria-hidden="true">
+      <div style="position: absolute; bottom: 28px; left: 0; right: 0; display: flex; justify-content: center; gap: 6px" aria-hidden="true">
         <span style="width: 18px; height: 6px; border-radius: 999px; background: #000000"></span>
         <span style="width: 6px; height: 6px; border-radius: 999px; background: #C4C7CC"></span>
         <span style="width: 6px; height: 6px; border-radius: 999px; background: #C4C7CC"></span>
         <span style="width: 6px; height: 6px; border-radius: 999px; background: #C4C7CC"></span>
         <span style="width: 6px; height: 6px; border-radius: 999px; background: #C4C7CC"></span>
       </div>
-      <span style="position: absolute; bottom: 24px; right: 16px; background: #FFFFFF; color: #000000; font-size: 12px; font-weight: 600; line-height: 16px; padding: 3px 9px; border-radius: 999px">1 из 14</span>
+      <span style="position: absolute; bottom: 22px; right: 16px; background: #FFFFFF; color: #000000; font-size: 12px; font-weight: 600; line-height: 16px; padding: 3px 9px; border-radius: 999px">1 из 14</span>
     </section>
 
     <!-- Лист -->
-    <div style="margin-top: -16px; position: relative; background: #FFFFFF; border-radius: 20px 20px 0 0; padding: 18px 16px 0; display: flex; flex-direction: column; gap: 14px; flex: 1; min-height: 0">
+    <div style="margin-top: -16px; position: relative; background: #FFFFFF; border-radius: 20px 20px 0 0; padding: 16px 16px 0; display: flex; flex-direction: column; gap: 12px; flex: 1; min-height: 0">
 
       <div style="display: flex; flex-direction: column; gap: 6px">
         <h1 style="margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.05">Квартира у Кремля</h1>
@@ -154,7 +153,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
       </div>
 
       <!-- Советы гостей -->
-      <section aria-labelledby="g1-tips" style="position: relative; background: #F2F3F5; border-radius: 20px; padding: 16px 16px 6px; display: flex; flex-direction: column; gap: 12px; overflow: hidden">
+      <section aria-labelledby="g1-tips" style="position: relative; background: #F2F3F5; border-radius: 20px; padding: 14px 14px 2px; display: flex; flex-direction: column; gap: 10px; overflow: hidden">
         <svg aria-hidden="true" style="position: absolute; right: -36px; top: -44px" width="110" height="110" viewBox="0 0 110 110"><circle cx="55" cy="55" r="55" fill="#F1E9FE"></circle></svg>
 
         <div style="position: relative; display: flex; align-items: flex-start; gap: 10px">
@@ -166,7 +165,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
         </div>
 
         <!-- Совет: Марина -->
-        <article style="position: relative; background: #FFFFFF; border-radius: 16px; padding: 12px; display: flex; flex-direction: column; gap: 8px">
+        <article style="position: relative; background: #FFFFFF; border-radius: 16px; padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 6px">
           <div style="display: flex; align-items: center; gap: 10px">
             <span style="position: relative; width: 36px; height: 36px; flex-shrink: 0; border-radius: 999px; background: #E5F6FF; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800">
               <svg aria-hidden="true" style="position: absolute; right: -8px; top: -8px" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="11" fill="#FF6163"></circle></svg>
@@ -192,7 +191,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
         </article>
 
         <!-- Совет: Илья -->
-        <article style="position: relative; background: #FFFFFF; border-radius: 16px; padding: 12px; display: flex; flex-direction: column; gap: 8px">
+        <article style="position: relative; background: #FFFFFF; border-radius: 16px; padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 6px">
           <div style="display: flex; align-items: center; gap: 10px">
             <span style="position: relative; width: 36px; height: 36px; flex-shrink: 0; border-radius: 999px; background: #F0F8E0; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800">
               <svg aria-hidden="true" style="position: absolute; left: -8px; bottom: -8px" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="11" fill="#00AAFF"></circle></svg>
@@ -223,24 +222,24 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
   </div>
 
   <!-- Липкая панель -->
-  <div style="flex-shrink: 0; border-top: 1px solid #E6E8EB; background: #FFFFFF; padding: 12px 16px 16px; display: flex; align-items: center; gap: 12px">
+  <div style="flex-shrink: 0; border-top: 1px solid #E6E8EB; background: #FFFFFF; padding: 10px 16px 30px; display: flex; align-items: center; gap: 12px">
     <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
       <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1">3 400 ₽ <span style="font-size: 14px; font-weight: 600; letter-spacing: 0">за ночь</span></span>
       <span style="font-size: 13px; font-weight: 500; color: #6B6F76">8-10 ноября · 2 гостя</span>
     </div>
-    <button type="button" style="height: 52px; padding: 0 24px; border: none; border-radius: 999px; background: #00AAFF; color: #000000; font-family: inherit; font-size: 16px; font-weight: 800; cursor: pointer">Забронировать</button>
+    <button type="button" style="height: 48px; padding: 0 24px; border: none; border-radius: 999px; background: #00AAFF; color: #000000; font-family: inherit; font-size: 16px; font-weight: 800; cursor: pointer">Забронировать</button>
   </div>
 
-</div></div><div class="home"></div></div></div>
+</div></div><div class="sb" style="color:#000"><span class="t">9:41</span><span class="island"></span><span class="ic"><svg class="cell" width="17" height="11" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx=".9" fill="currentColor"/><rect x="4.67" y="5" width="3" height="6" rx=".9" fill="currentColor"/><rect x="9.33" y="2.5" width="3" height="8.5" rx=".9" fill="currentColor"/><rect x="14" y="0" width="3" height="11" rx=".9" fill="currentColor"/></svg><svg class="wifi" width="16" height="12" viewBox="0 0 16 12" overflow="visible" aria-hidden="true"><path d="M8 11.6L5.95 9.55A2.9 2.9 0 0 1 10.05 9.55ZM3.05 6.65A7 7 0 0 1 12.95 6.65L11.82 7.78A5.4 5.4 0 0 0 4.18 7.78ZM0.36 3.96A10.8 10.8 0 0 1 15.64 3.96L14.58 5.02A9.3 9.3 0 0 0 1.42 5.02Z" fill="currentColor" stroke="currentColor" stroke-width=".8" stroke-linejoin="round"/></svg><svg class="bat" width="26" height="12" viewBox="0 0 26 12" aria-hidden="true"><rect x=".5" y=".5" width="22" height="11" rx="3.3" fill="none" stroke="currentColor" opacity=".35"/><rect x="2" y="2" width="19" height="8" rx="1.9" fill="currentColor"/><path d="M24 4v4c.8-.3 1.4-1.1 1.4-2S24.8 4.3 24 4Z" fill="currentColor" opacity=".4"/></svg></span></div><div class="home" style="background:#000"></div></div></div>
   <figcaption><b>G1</b> Карточка жилья с советами</figcaption>
 </figure>
 <figure class="phone">
-  <div class="iphone"><i class="b b1"></i><i class="b b2"></i><i class="b b3"></i><i class="b b4"></i><div class="glass"><div class="sb" style="background:#ffffff;color:#000"><span class="t">9:41</span><span class="island"></span><span class="ic"><svg class="cell" width="17" height="11" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx=".9" fill="currentColor"/><rect x="4.67" y="5" width="3" height="6" rx=".9" fill="currentColor"/><rect x="9.33" y="2.5" width="3" height="8.5" rx=".9" fill="currentColor"/><rect x="14" y="0" width="3" height="11" rx=".9" fill="currentColor"/></svg><svg class="wifi" width="16" height="12" viewBox="0 0 16 12" overflow="visible" aria-hidden="true"><path d="M8 11.6L5.95 9.55A2.9 2.9 0 0 1 10.05 9.55ZM3.05 6.65A7 7 0 0 1 12.95 6.65L11.82 7.78A5.4 5.4 0 0 0 4.18 7.78ZM0.36 3.96A10.8 10.8 0 0 1 15.64 3.96L14.58 5.02A9.3 9.3 0 0 0 1.42 5.02Z" fill="currentColor" stroke="currentColor" stroke-width=".8" stroke-linejoin="round"/></svg><svg class="bat" width="26" height="12" viewBox="0 0 26 12" aria-hidden="true"><rect x=".5" y=".5" width="22" height="11" rx="3.3" fill="none" stroke="currentColor" opacity=".35"/><rect x="2" y="2" width="19" height="8" rx="1.9" fill="currentColor"/><path d="M24 4v4c.8-.3 1.4-1.1 1.4-2S24.8 4.3 24 4Z" fill="currentColor" opacity=".4"/></svg></span></div><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #F2F3F5; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
+  <div class="iphone"><i class="b b1"></i><i class="b b2"></i><i class="b b3"></i><i class="b b4"></i><div class="glass"><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #F2F3F5; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
 
   <div style="flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column">
 
-    <header style="position: relative; overflow: hidden; background: #FFFFFF; border-radius: 0 0 24px 24px; padding: 4px 16px 12px; display: flex; flex-direction: column; gap: 2px; flex-shrink: 0">
-      <svg aria-hidden="true" style="position: absolute; right: -44px; top: -56px" width="120" height="120" viewBox="0 0 120 120"><circle cx="60" cy="60" r="60" fill="#E5F6FF"></circle></svg>
+    <header style="position: relative; overflow: hidden; background: #FFFFFF; border-radius: 0 0 24px 24px; padding: 54px 16px 12px; display: flex; flex-direction: column; gap: 2px; flex-shrink: 0">
+      <svg aria-hidden="true" style="position: absolute; right: -44px; top: -10px" width="120" height="120" viewBox="0 0 120 120"><circle cx="60" cy="60" r="60" fill="#E5F6FF"></circle></svg>
       <div style="position: relative; display: flex; align-items: center; justify-content: space-between">
         <button type="button" aria-label="Назад" style="width: 44px; height: 44px; margin-left: -4px; border: none; background: transparent; border-radius: 999px; display: flex; align-items: center; justify-content: center; padding: 0; cursor: pointer">
           <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5 l-7 7 7 7"></path></svg>
@@ -260,15 +259,9 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
       </div>
     </header>
 
-    <div role="group" aria-label="Фильтр советов" style="padding: 10px 16px; display: flex; gap: 8px; overflow: hidden; flex-shrink: 0">
-      <button type="button" aria-pressed="true" style="flex-shrink: 0; height: 44px; padding: 0 16px; border: none; border-radius: 999px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer">Все</button>
-      <button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; padding: 0 16px; border: none; border-radius: 999px; background: #FFFFFF; color: #000000; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer">Пары</button>
-      <button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; padding: 0 16px; border: none; border-radius: 999px; background: #FFFFFF; color: #000000; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer">С детьми</button>
-      <button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; padding: 0 16px; border: none; border-radius: 999px; background: #FFFFFF; color: #000000; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer">Свежие</button>
-    </div>
 
-    <div style="padding: 0 12px; display: flex; flex-direction: column; gap: 8px; flex-shrink: 0">
-      <article style="background: #FFFFFF; border-radius: 16px; padding: 12px 14px; display: flex; flex-direction: column; gap: 7px; flex-shrink: 0">
+    <div style="padding: 12px 12px 0; display: flex; flex-direction: column; gap: 8px; flex-shrink: 0">
+      <article style="background: #FFFFFF; border-radius: 16px; padding: 11px 14px 12px; display: flex; flex-direction: column; gap: 6px; flex-shrink: 0">
         <div style="display: flex; align-items: center; gap: 10px">
             <span style="position: relative; width: 36px; height: 36px; flex-shrink: 0; border-radius: 999px; background: #E5F6FF; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800">
               <svg aria-hidden="true" style="position: absolute; right: -8px; top: -8px" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="11" fill="#FF6163"></circle></svg>
@@ -285,7 +278,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
           Жила по брони на Авито, 12-15 августа
         </span>
         <p style="margin: 0; font-size: 15px; font-weight: 500; line-height: 1.32">Жить лучше у Баумана: всё пешком, но окна во двор, на улице шумно до ночи.</p>
-        <div style="display: flex; gap: 8px; margin-top: 1px">
+        <div style="display: flex; gap: 8px">
           <a href="#" tabindex="-1" style="flex: 1; min-width: 0; height: 44px; box-sizing: border-box; display: flex; align-items: center; gap: 8px; padding: 0 8px 0 6px; background: #F2F3F5; border-radius: 12px; text-decoration: none; color: #000000">
             <span style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 8px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 L12 4 l8 6.5 V20 H4 z"></path><rect x="9.5" y="13" width="5" height="7"></rect></svg></span>
             <span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
@@ -299,7 +292,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
           </button>
         </div>
       </article>
-      <article style="background: #FFFFFF; border-radius: 16px; padding: 12px 14px; display: flex; flex-direction: column; gap: 7px; flex-shrink: 0">
+      <article style="background: #FFFFFF; border-radius: 16px; padding: 11px 14px 12px; display: flex; flex-direction: column; gap: 6px; flex-shrink: 0">
         <div style="display: flex; align-items: center; gap: 10px">
             <span style="position: relative; width: 36px; height: 36px; flex-shrink: 0; border-radius: 999px; background: #F0F8E0; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800">
               <svg aria-hidden="true" style="position: absolute; left: -8px; bottom: -8px" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="11" fill="#00AAFF"></circle></svg>
@@ -316,7 +309,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
           Жил по брони на Авито, 6-9 сентября
         </span>
         <p style="margin: 0; font-size: 15px; font-weight: 500; line-height: 1.32">В Кремль к открытию, к 11 уже толпы. С&nbsp;детьми лучше в&nbsp;будни.</p>
-        <div style="display: flex; gap: 8px; margin-top: 1px">
+        <div style="display: flex; gap: 8px">
           <a href="#" tabindex="-1" style="flex: 1; min-width: 0; height: 44px; box-sizing: border-box; display: flex; align-items: center; gap: 8px; padding: 0 8px 0 6px; background: #F2F3F5; border-radius: 12px; text-decoration: none; color: #000000">
             <span style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 8px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 L12 4 l8 6.5 V20 H4 z"></path><rect x="9.5" y="13" width="5" height="7"></rect></svg></span>
             <span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
@@ -330,7 +323,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
           </button>
         </div>
       </article>
-      <article style="background: #FFFFFF; border-radius: 16px; padding: 12px 14px; display: flex; flex-direction: column; gap: 7px; flex-shrink: 0">
+      <article style="background: #FFFFFF; border-radius: 16px; padding: 11px 14px 12px; display: flex; flex-direction: column; gap: 6px; flex-shrink: 0">
         <div style="display: flex; align-items: center; gap: 10px">
             <span style="position: relative; width: 50px; height: 36px; flex-shrink: 0">
               <span style="position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 999px; background: #FFE8E8; border: 2px solid #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 800; padding-right: 4px; box-sizing: border-box">А</span>
@@ -347,7 +340,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
           Жили по брони на Авито, 3-5 октября
         </span>
         <p style="margin: 0; font-size: 15px; font-weight: 500; line-height: 1.32">Чак-чак берите в слободе, не на Баумана: там вдвое дороже.</p>
-        <div style="display: flex; gap: 8px; margin-top: 1px">
+        <div style="display: flex; gap: 8px">
           <a href="#" tabindex="-1" style="flex: 1; min-width: 0; height: 44px; box-sizing: border-box; display: flex; align-items: center; gap: 8px; padding: 0 8px 0 6px; background: #F2F3F5; border-radius: 12px; text-decoration: none; color: #000000">
             <span style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 8px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 L12 4 l8 6.5 V20 H4 z"></path><rect x="9.5" y="13" width="5" height="7"></rect></svg></span>
             <span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
@@ -364,7 +357,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
     </div>
   </div>
 
-  <nav aria-label="Основная навигация" style="flex: none; height: 72px; box-sizing: border-box; border-top: 1px solid #E6E8EB; background: #FFFFFF; display: grid; grid-template-columns: repeat(5, 1fr); padding: 6px 4px 10px 4px">
+  <nav aria-label="Основная навигация" style="flex: none; height: 82px; box-sizing: border-box; border-top: 1px solid #E6E8EB; background: #FFFFFF; display: grid; grid-template-columns: repeat(5, 1fr); padding: 6px 4px 30px 4px">
     <a href="#" tabindex="-1" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #0077CC">
       <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0077CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5L12 4l8 6.5V20h-5v-6h-6v6H4z"></path></svg>
       <span style="font-size: 11px; font-weight: 700">Главная</span>
@@ -387,7 +380,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
     </a>
   </nav>
 
-</div></div><div class="home"></div></div></div>
+</div></div><div class="sb" style="color:#000"><span class="t">9:41</span><span class="island"></span><span class="ic"><svg class="cell" width="17" height="11" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx=".9" fill="currentColor"/><rect x="4.67" y="5" width="3" height="6" rx=".9" fill="currentColor"/><rect x="9.33" y="2.5" width="3" height="8.5" rx=".9" fill="currentColor"/><rect x="14" y="0" width="3" height="11" rx=".9" fill="currentColor"/></svg><svg class="wifi" width="16" height="12" viewBox="0 0 16 12" overflow="visible" aria-hidden="true"><path d="M8 11.6L5.95 9.55A2.9 2.9 0 0 1 10.05 9.55ZM3.05 6.65A7 7 0 0 1 12.95 6.65L11.82 7.78A5.4 5.4 0 0 0 4.18 7.78ZM0.36 3.96A10.8 10.8 0 0 1 15.64 3.96L14.58 5.02A9.3 9.3 0 0 0 1.42 5.02Z" fill="currentColor" stroke="currentColor" stroke-width=".8" stroke-linejoin="round"/></svg><svg class="bat" width="26" height="12" viewBox="0 0 26 12" aria-hidden="true"><rect x=".5" y=".5" width="22" height="11" rx="3.3" fill="none" stroke="currentColor" opacity=".35"/><rect x="2" y="2" width="19" height="8" rx="1.9" fill="currentColor"/><path d="M24 4v4c.8-.3 1.4-1.1 1.4-2S24.8 4.3 24 4Z" fill="currentColor" opacity=".4"/></svg></span></div><div class="home" style="background:#000"></div></div></div>
   <figcaption><b>G2</b> Советы по городу</figcaption>
 </figure>
   </div>
@@ -402,16 +395,16 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
   </div>
   <div class="row">
 <figure class="phone">
-  <div class="iphone"><i class="b b1"></i><i class="b b2"></i><i class="b b3"></i><i class="b b4"></i><div class="glass"><div class="sb" style="background:#ffffff;color:#000"><span class="t">9:41</span><span class="island"></span><span class="ic"><svg class="cell" width="17" height="11" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx=".9" fill="currentColor"/><rect x="4.67" y="5" width="3" height="6" rx=".9" fill="currentColor"/><rect x="9.33" y="2.5" width="3" height="8.5" rx=".9" fill="currentColor"/><rect x="14" y="0" width="3" height="11" rx=".9" fill="currentColor"/></svg><svg class="wifi" width="16" height="12" viewBox="0 0 16 12" overflow="visible" aria-hidden="true"><path d="M8 11.6L5.95 9.55A2.9 2.9 0 0 1 10.05 9.55ZM3.05 6.65A7 7 0 0 1 12.95 6.65L11.82 7.78A5.4 5.4 0 0 0 4.18 7.78ZM0.36 3.96A10.8 10.8 0 0 1 15.64 3.96L14.58 5.02A9.3 9.3 0 0 0 1.42 5.02Z" fill="currentColor" stroke="currentColor" stroke-width=".8" stroke-linejoin="round"/></svg><svg class="bat" width="26" height="12" viewBox="0 0 26 12" aria-hidden="true"><rect x=".5" y=".5" width="22" height="11" rx="3.3" fill="none" stroke="currentColor" opacity=".35"/><rect x="2" y="2" width="19" height="8" rx="1.9" fill="currentColor"/><path d="M24 4v4c.8-.3 1.4-1.1 1.4-2S24.8 4.3 24 4Z" fill="currentColor" opacity=".4"/></svg></span></div><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #FFFFFF; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
+  <div class="iphone"><i class="b b1"></i><i class="b b2"></i><i class="b b3"></i><i class="b b4"></i><div class="glass"><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #FFFFFF; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
 
-  <div aria-hidden="true" style="position: absolute; right: -60px; top: -70px; width: 200px; height: 200px; border-radius: 999px; background: #E5F6FF"></div>
-  <div aria-hidden="true" style="position: absolute; right: 22px; top: 70px; width: 52px; height: 52px; border-radius: 999px; background: #00AAFF"></div>
-  <div aria-hidden="true" style="position: absolute; right: 44px; top: 138px; width: 20px; height: 20px; border-radius: 999px; background: #FF6163"></div>
-  <div aria-hidden="true" style="position: absolute; right: 2px; top: 118px; width: 30px; height: 30px; border-radius: 999px; background: #97CF26"></div>
+  <div aria-hidden="true" style="position: absolute; right: -60px; top: -24px; width: 200px; height: 200px; border-radius: 999px; background: #E5F6FF"></div>
+  <div aria-hidden="true" style="position: absolute; right: 22px; top: 116px; width: 52px; height: 52px; border-radius: 999px; background: #00AAFF"></div>
+  <div aria-hidden="true" style="position: absolute; right: 44px; top: 184px; width: 20px; height: 20px; border-radius: 999px; background: #FF6163"></div>
+  <div aria-hidden="true" style="position: absolute; right: 2px; top: 164px; width: 30px; height: 30px; border-radius: 999px; background: #97CF26"></div>
 
   <div style="position: relative; flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column">
 
-    <div style="padding: 8px 12px 0 12px; display: flex; align-items: center; justify-content: space-between">
+    <div style="padding: 54px 12px 0 12px; display: flex; align-items: center; justify-content: space-between">
       <button aria-label="Закрыть" style="width: 44px; height: 44px; border: 0; border-radius: 999px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; padding: 0; cursor: pointer">
         <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12"></path><path d="M18 6L6 18"></path></svg>
       </button>
@@ -419,13 +412,13 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
       <span aria-hidden="true" style="width: 44px; height: 44px"></span>
     </div>
 
-    <div style="padding: 6px 20px 0 20px; display: flex; flex-direction: column; gap: 8px">
+    <div style="padding: 4px 20px 0 20px; display: flex; flex-direction: column; gap: 6px">
       <span style="align-self: flex-start; height: 26px; padding: 0 10px; border-radius: 999px; background: #F2F3F5; display: inline-flex; align-items: center; font-size: 12px; font-weight: 700; color: #6B6F76">Квартира у Кремля, выезд вчера</span>
       <h1 style="margin: 0; font-size: 32px; line-height: 1.05; font-weight: 800; letter-spacing: -0.02em">Как вам Казань?</h1>
       <p style="margin: 0; font-size: 15px; line-height: 1.35; font-weight: 500; color: #6B6F76; max-width: 290px">Оставьте 3-5 советов тем, кто поедет следом. Это займёт 2 минуты.</p>
     </div>
 
-    <div style="margin: 16px 16px 0 16px; border-radius: 16px; background: #F0F8E0; padding: 10px 12px; display: flex; align-items: center; gap: 12px">
+    <div style="margin: 12px 16px 0 16px; border-radius: 16px; background: #F0F8E0; padding: 10px 12px; display: flex; align-items: center; gap: 12px">
       <div aria-hidden="true" style="position: relative; flex: none; width: 44px; height: 44px; border-radius: 12px; background: #FFFFFF; overflow: hidden">
         <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><path d="M4 30c6-8 12-4 17-11s12-9 19-6" stroke="#E6E8EB" stroke-width="2" stroke-linecap="round"></path><circle cx="10" cy="14" r="3" fill="#A169F7"></circle><circle cx="34" cy="31" r="3" fill="#00AAFF"></circle><circle cx="15" cy="34" r="3" fill="#FF6163"></circle><circle cx="23" cy="21" r="6" fill="#97CF26"></circle><circle cx="23" cy="21" r="2.4" fill="#000000"></circle></svg>
       </div>
@@ -438,7 +431,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
       </div>
     </div>
 
-    <div style="margin: 18px 20px 0 20px; display: flex; align-items: center; justify-content: space-between">
+    <div style="margin: 14px 20px 0 20px; display: flex; align-items: center; justify-content: space-between">
       <h2 style="margin: 0; font-size: 18px; line-height: 1.1; font-weight: 800; letter-spacing: -0.01em">Ваши советы</h2>
       <div style="display: flex; align-items: center; gap: 8px">
         <span aria-hidden="true" style="display: flex; gap: 3px"><span style="width: 14px; height: 6px; border-radius: 999px; background: #00AAFF"></span><span style="width: 14px; height: 6px; border-radius: 999px; background: #E6E8EB"></span><span style="width: 14px; height: 6px; border-radius: 999px; background: #E6E8EB"></span></span>
@@ -446,7 +439,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
       </div>
     </div>
 
-    <article style="margin: 10px 16px 0 16px; border-radius: 16px; background: #E5F6FF; padding: 12px 8px 12px 14px; display: flex; flex-direction: column; gap: 6px">
+    <article style="margin: 8px 16px 0 16px; border-radius: 16px; background: #E5F6FF; padding: 12px 8px 12px 14px; display: flex; flex-direction: column; gap: 6px">
       <div style="display: flex; align-items: center; justify-content: space-between">
         <span style="height: 26px; padding: 0 10px; border-radius: 999px; background: #FFFFFF; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 800">
           <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5L12 4l8 6.5V20H4z"></path></svg>
@@ -466,7 +459,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
       </a>
     </article>
 
-    <div style="margin: 10px 16px 0 16px; border-radius: 16px; border: 1.5px dashed #C9CDD2; padding: 12px; display: flex; flex-direction: column; gap: 10px">
+    <div style="margin: 8px 16px 0 16px; border-radius: 16px; border: 1.5px dashed #C9CDD2; padding: 12px; display: flex; flex-direction: column; gap: 8px">
       <div role="group" aria-label="Тема совета" style="display: flex; gap: 4px">
         <button aria-pressed="false" style="height: 44px; padding: 0 9px; border: 1.5px solid #E6E8EB; border-radius: 999px; background: #FFFFFF; font-family: inherit; font-size: 12px; font-weight: 700; color: #000000; cursor: pointer">Где жить</button>
         <button aria-pressed="true" style="height: 44px; padding: 0 9px; border: 1.5px solid #000000; border-radius: 999px; background: #000000; font-family: inherit; font-size: 12px; font-weight: 700; color: #FFFFFF; cursor: pointer">Куда сходить</button>
@@ -477,7 +470,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
       <textarea id="tip2" rows="2" placeholder="Куда сходить и в какое время" style="margin-top: -6px; resize: none; border: 0; padding: 0; font-family: inherit; font-size: 15px; line-height: 1.35; font-weight: 500; color: #000000; background: transparent; outline: none"></textarea>
     </div>
 
-    <div style="margin: 10px 16px 0 16px; border-radius: 16px; background: #F1E9FE; padding: 12px 14px; display: flex; flex-direction: column; gap: 10px">
+    <div style="margin: 8px 16px 0 16px; border-radius: 16px; background: #F1E9FE; padding: 12px 14px; display: flex; flex-direction: column; gap: 10px">
       <div style="display: flex; align-items: center; gap: 10px">
         <span aria-hidden="true" style="flex: none; width: 32px; height: 32px; border-radius: 999px; background: #A169F7; display: flex; align-items: center; justify-content: center">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
@@ -493,27 +486,23 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
       </div>
     </div>
 
-    <div style="margin: 14px 16px 0 16px; display: flex; align-items: flex-start; gap: 10px; padding: 0 4px">
-      <svg aria-hidden="true" style="flex: none; margin-top: 1px" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6z"></path><polyline points="9 12 11.2 14.2 15.5 9.8"></polyline></svg>
-      <span style="font-size: 12px; line-height: 1.4; font-weight: 600; color: #6B6F76">Советы видят только те, кто ищет жильё в Казани. Писать могут только гости с бронью.</span>
-    </div>
   </div>
 
-  <div style="flex: none; padding: 10px 16px 18px 16px; background: #FFFFFF; border-top: 1px solid #E6E8EB">
+  <div style="flex: none; padding: 10px 16px 30px 16px; background: #FFFFFF; border-top: 1px solid #E6E8EB">
     <button style="width: 100%; height: 52px; border: 0; border-radius: 999px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 16px; font-weight: 800; cursor: pointer">Опубликовать советы</button>
   </div>
-</div></div><div class="home"></div></div></div>
+</div></div><div class="sb" style="color:#000"><span class="t">9:41</span><span class="island"></span><span class="ic"><svg class="cell" width="17" height="11" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx=".9" fill="currentColor"/><rect x="4.67" y="5" width="3" height="6" rx=".9" fill="currentColor"/><rect x="9.33" y="2.5" width="3" height="8.5" rx=".9" fill="currentColor"/><rect x="14" y="0" width="3" height="11" rx=".9" fill="currentColor"/></svg><svg class="wifi" width="16" height="12" viewBox="0 0 16 12" overflow="visible" aria-hidden="true"><path d="M8 11.6L5.95 9.55A2.9 2.9 0 0 1 10.05 9.55ZM3.05 6.65A7 7 0 0 1 12.95 6.65L11.82 7.78A5.4 5.4 0 0 0 4.18 7.78ZM0.36 3.96A10.8 10.8 0 0 1 15.64 3.96L14.58 5.02A9.3 9.3 0 0 0 1.42 5.02Z" fill="currentColor" stroke="currentColor" stroke-width=".8" stroke-linejoin="round"/></svg><svg class="bat" width="26" height="12" viewBox="0 0 26 12" aria-hidden="true"><rect x=".5" y=".5" width="22" height="11" rx="3.3" fill="none" stroke="currentColor" opacity=".35"/><rect x="2" y="2" width="19" height="8" rx="1.9" fill="currentColor"/><path d="M24 4v4c.8-.3 1.4-1.1 1.4-2S24.8 4.3 24 4Z" fill="currentColor" opacity=".4"/></svg></span></div><div class="home" style="background:#000"></div></div></div>
   <figcaption><b>G3</b> После выезда</figcaption>
 </figure>
 <figure class="phone">
-  <div class="iphone"><i class="b b1"></i><i class="b b2"></i><i class="b b3"></i><i class="b b4"></i><div class="glass"><div class="sb" style="background:#e5f6ff;color:#000"><span class="t">9:41</span><span class="island"></span><span class="ic"><svg class="cell" width="17" height="11" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx=".9" fill="currentColor"/><rect x="4.67" y="5" width="3" height="6" rx=".9" fill="currentColor"/><rect x="9.33" y="2.5" width="3" height="8.5" rx=".9" fill="currentColor"/><rect x="14" y="0" width="3" height="11" rx=".9" fill="currentColor"/></svg><svg class="wifi" width="16" height="12" viewBox="0 0 16 12" overflow="visible" aria-hidden="true"><path d="M8 11.6L5.95 9.55A2.9 2.9 0 0 1 10.05 9.55ZM3.05 6.65A7 7 0 0 1 12.95 6.65L11.82 7.78A5.4 5.4 0 0 0 4.18 7.78ZM0.36 3.96A10.8 10.8 0 0 1 15.64 3.96L14.58 5.02A9.3 9.3 0 0 0 1.42 5.02Z" fill="currentColor" stroke="currentColor" stroke-width=".8" stroke-linejoin="round"/></svg><svg class="bat" width="26" height="12" viewBox="0 0 26 12" aria-hidden="true"><rect x=".5" y=".5" width="22" height="11" rx="3.3" fill="none" stroke="currentColor" opacity=".35"/><rect x="2" y="2" width="19" height="8" rx="1.9" fill="currentColor"/><path d="M24 4v4c.8-.3 1.4-1.1 1.4-2S24.8 4.3 24 4Z" fill="currentColor" opacity=".4"/></svg></span></div><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #FFFFFF; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
+  <div class="iphone"><i class="b b1"></i><i class="b b2"></i><i class="b b3"></i><i class="b b4"></i><div class="glass"><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #FFFFFF; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
 
-  <div aria-hidden="true" style="position: absolute; right: -70px; top: -80px; width: 220px; height: 220px; border-radius: 999px; background: #F1E9FE"></div>
-  <div aria-hidden="true" style="position: absolute; right: 130px; top: -36px; width: 80px; height: 80px; border-radius: 999px; background: #E5F6FF"></div>
+  <div aria-hidden="true" style="position: absolute; right: -70px; top: -40px; width: 220px; height: 220px; border-radius: 999px; background: #F1E9FE"></div>
+  <div aria-hidden="true" style="position: absolute; right: 130px; top: -16px; width: 80px; height: 80px; border-radius: 999px; background: #E5F6FF"></div>
 
   <div style="position: relative; flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column">
 
-    <div style="padding: 8px 12px 0 12px; display: flex; align-items: center; justify-content: space-between">
+    <div style="padding: 54px 12px 0 12px; display: flex; align-items: center; justify-content: space-between">
       <button aria-label="Назад" style="width: 44px; height: 44px; border: 0; border-radius: 999px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; padding: 0; cursor: pointer">
         <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 5 8 12 15 19"></polyline></svg>
       </button>
@@ -542,22 +531,22 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
       </div>
     </div>
 
-    <ul aria-label="Статистика" style="list-style: none; margin: 18px 16px 0 16px; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px">
-      <li style="border-radius: 16px; background: #F2F3F5; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px">
+    <ul aria-label="Статистика" style="list-style: none; margin: 14px 16px 0 16px; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px">
+      <li style="border-radius: 16px; background: #F2F3F5; padding: 8px 12px; display: flex; flex-direction: column; gap: 2px">
         <span style="font-size: 22px; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em">214</span>
         <span style="font-size: 12px; line-height: 1.25; font-weight: 600; color: #6B6F76">отметили полезным</span>
       </li>
-      <li style="border-radius: 16px; background: #F2F3F5; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px">
+      <li style="border-radius: 16px; background: #F2F3F5; padding: 8px 12px; display: flex; flex-direction: column; gap: 2px">
         <span style="font-size: 22px; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em">9</span>
         <span style="font-size: 12px; line-height: 1.25; font-weight: 600; color: #6B6F76">городов на карте</span>
       </li>
-      <li style="border-radius: 16px; background: #F2F3F5; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px">
+      <li style="border-radius: 16px; background: #F2F3F5; padding: 8px 12px; display: flex; flex-direction: column; gap: 2px">
         <span style="font-size: 22px; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em">31</span>
         <span style="font-size: 12px; line-height: 1.25; font-weight: 600; color: #6B6F76">совет</span>
       </li>
     </ul>
 
-    <div style="margin: 14px 0 0 0; padding: 0 16px; display: flex; flex-direction: column; gap: 6px">
+    <div style="margin: 12px 0 0 0; padding: 0 16px; display: flex; flex-direction: column; gap: 6px">
       <h2 style="margin: 0 4px; font-size: 15px; line-height: 1.2; font-weight: 800">Карта Марины</h2>
       <ul aria-label="Города на карте" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 6px">
         <li style="height: 32px; padding: 0 10px 0 6px; border-radius: 999px; background: #E5F6FF; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 800"><span aria-hidden="true" style="width: 18px; height: 18px; border-radius: 999px; background: #00AAFF"></span>Казань</li>
@@ -567,7 +556,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
       </ul>
     </div>
 
-    <div style="margin: 16px 20px 0 20px; display: flex; flex-direction: column; gap: 6px">
+    <div style="margin: 14px 20px 0 20px; display: flex; flex-direction: column; gap: 6px">
       <div style="display: flex; align-items: center; justify-content: space-between">
         <h2 style="margin: 0; font-size: 18px; line-height: 1.1; font-weight: 800; letter-spacing: -0.01em">Советы по Казани</h2>
         <a href="#" tabindex="-1" style="height: 44px; margin: -12px 0; display: flex; align-items: center; font-size: 14px; font-weight: 700; text-decoration: none">Все 5</a>
@@ -579,7 +568,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
     </div>
 
     <div style="margin: 8px 16px 0 16px; display: flex; flex-direction: column; gap: 8px">
-      <article style="border-radius: 16px; border: 1px solid #E6E8EB; padding: 10px 12px 12px 14px; display: flex; flex-direction: column; gap: 6px">
+      <article style="border-radius: 16px; border: 1px solid #E6E8EB; padding: 8px 10px 10px 14px; display: flex; flex-direction: column; gap: 4px">
         <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
           <span style="flex-shrink: 0; background: #E5F6FF; border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; line-height: 16px">Где жить</span>
           <button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; display: inline-flex; align-items: center; gap: 6px; border: 1.5px solid #E6E8EB; background: #FFFFFF; border-radius: 999px; padding: 0 12px; font-family: inherit; font-size: 13px; font-weight: 700; color: #000000; cursor: pointer">
@@ -589,7 +578,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
         </div>
         <p style="margin: 0; font-size: 15px; line-height: 1.35; font-weight: 500">Жить лучше у Баумана: всё пешком, но окна во двор, на улице шумно до ночи.</p>
       </article>
-      <article style="border-radius: 16px; border: 1px solid #E6E8EB; padding: 10px 12px 12px 14px; display: flex; flex-direction: column; gap: 6px">
+      <article style="border-radius: 16px; border: 1px solid #E6E8EB; padding: 8px 10px 10px 14px; display: flex; flex-direction: column; gap: 4px">
         <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
           <span style="flex-shrink: 0; background: #F1E9FE; border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; line-height: 16px">Куда сходить</span>
           <button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; display: inline-flex; align-items: center; gap: 6px; border: 1.5px solid #E6E8EB; background: #FFFFFF; border-radius: 999px; padding: 0 12px; font-family: inherit; font-size: 13px; font-weight: 700; color: #000000; cursor: pointer">
@@ -601,14 +590,14 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
       </article>
     </div>
 
-    <p style="margin: 12px 20px 0 20px; font-size: 12px; line-height: 1.4; font-weight: 600; color: #6B6F76"><b style="font-weight: 800; color: #000000">Как стать знатоком:</b> после брони на Авито оставить 3&nbsp;совета о&nbsp;городе и собрать 20&nbsp;отметок «Полезно».</p>
+    <p style="margin: 10px 20px 0 20px; font-size: 12px; line-height: 1.4; font-weight: 600; color: #6B6F76"><b style="font-weight: 800; color: #000000">Как стать знатоком:</b> после брони на Авито оставить 3&nbsp;совета о&nbsp;городе и собрать 20&nbsp;отметок «Полезно».</p>
   </div>
 
   <div style="flex: none; padding: 6px 16px 10px 16px; background: #FFFFFF">
     <button style="width: 100%; height: 52px; border: 0; border-radius: 999px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 16px; font-weight: 800; cursor: pointer">Подписаться на советы Марины</button>
   </div>
 
-  <nav aria-label="Основная навигация" style="flex: none; height: 72px; box-sizing: border-box; border-top: 1px solid #E6E8EB; background: #FFFFFF; display: grid; grid-template-columns: repeat(5, 1fr); padding: 6px 4px 10px 4px">
+  <nav aria-label="Основная навигация" style="flex: none; height: 82px; box-sizing: border-box; border-top: 1px solid #E6E8EB; background: #FFFFFF; display: grid; grid-template-columns: repeat(5, 1fr); padding: 6px 4px 30px 4px">
     <a href="#" tabindex="-1" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #0077CC">
       <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0077CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5L12 4l8 6.5V20h-5v-6h-6v6H4z"></path></svg>
       <span style="font-size: 11px; font-weight: 700">Главная</span>
@@ -630,7 +619,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
       <span style="font-size: 11px; font-weight: 600">Профиль</span>
     </a>
   </nav>
-</div></div><div class="home"></div></div></div>
+</div></div><div class="sb" style="color:#000"><span class="t">9:41</span><span class="island"></span><span class="ic"><svg class="cell" width="17" height="11" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx=".9" fill="currentColor"/><rect x="4.67" y="5" width="3" height="6" rx=".9" fill="currentColor"/><rect x="9.33" y="2.5" width="3" height="8.5" rx=".9" fill="currentColor"/><rect x="14" y="0" width="3" height="11" rx=".9" fill="currentColor"/></svg><svg class="wifi" width="16" height="12" viewBox="0 0 16 12" overflow="visible" aria-hidden="true"><path d="M8 11.6L5.95 9.55A2.9 2.9 0 0 1 10.05 9.55ZM3.05 6.65A7 7 0 0 1 12.95 6.65L11.82 7.78A5.4 5.4 0 0 0 4.18 7.78ZM0.36 3.96A10.8 10.8 0 0 1 15.64 3.96L14.58 5.02A9.3 9.3 0 0 0 1.42 5.02Z" fill="currentColor" stroke="currentColor" stroke-width=".8" stroke-linejoin="round"/></svg><svg class="bat" width="26" height="12" viewBox="0 0 26 12" aria-hidden="true"><rect x=".5" y=".5" width="22" height="11" rx="3.3" fill="none" stroke="currentColor" opacity=".35"/><rect x="2" y="2" width="19" height="8" rx="1.9" fill="currentColor"/><path d="M24 4v4c.8-.3 1.4-1.1 1.4-2S24.8 4.3 24 4Z" fill="currentColor" opacity=".4"/></svg></span></div><div class="home" style="background:#000"></div></div></div>
   <figcaption><b>G4</b> Профиль автора</figcaption>
 </figure>
   </div>
@@ -645,11 +634,11 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
   </div>
   <div class="row">
 <figure class="phone">
-  <div class="iphone"><i class="b b1"></i><i class="b b2"></i><i class="b b3"></i><i class="b b4"></i><div class="glass"><div class="sb" style="background:#ffffff;color:#000"><span class="t">9:41</span><span class="island"></span><span class="ic"><svg class="cell" width="17" height="11" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx=".9" fill="currentColor"/><rect x="4.67" y="5" width="3" height="6" rx=".9" fill="currentColor"/><rect x="9.33" y="2.5" width="3" height="8.5" rx=".9" fill="currentColor"/><rect x="14" y="0" width="3" height="11" rx=".9" fill="currentColor"/></svg><svg class="wifi" width="16" height="12" viewBox="0 0 16 12" overflow="visible" aria-hidden="true"><path d="M8 11.6L5.95 9.55A2.9 2.9 0 0 1 10.05 9.55ZM3.05 6.65A7 7 0 0 1 12.95 6.65L11.82 7.78A5.4 5.4 0 0 0 4.18 7.78ZM0.36 3.96A10.8 10.8 0 0 1 15.64 3.96L14.58 5.02A9.3 9.3 0 0 0 1.42 5.02Z" fill="currentColor" stroke="currentColor" stroke-width=".8" stroke-linejoin="round"/></svg><svg class="bat" width="26" height="12" viewBox="0 0 26 12" aria-hidden="true"><rect x=".5" y=".5" width="22" height="11" rx="3.3" fill="none" stroke="currentColor" opacity=".35"/><rect x="2" y="2" width="19" height="8" rx="1.9" fill="currentColor"/><path d="M24 4v4c.8-.3 1.4-1.1 1.4-2S24.8 4.3 24 4Z" fill="currentColor" opacity=".4"/></svg></span></div><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #FFFFFF; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
+  <div class="iphone"><i class="b b1"></i><i class="b b2"></i><i class="b b3"></i><i class="b b4"></i><div class="glass"><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #FFFFFF; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
 
-  <main style="flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; gap: 14px; padding: 8px 16px 0 16px">
+  <main style="flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; gap: 12px; padding: 54px 16px 0 16px">
 
-    <header style="display: flex; flex-direction: column; gap: 4px">
+    <header style="display: flex; flex-direction: column; gap: 2px">
       <div style="margin: 0 -4px; display: flex; align-items: center; justify-content: space-between">
         <span aria-hidden="true" style="width: 44px; height: 44px"></span>
         <span style="font-size: 15px; font-weight: 700">Путешествия</span>
@@ -661,7 +650,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
       <h1 style="margin: 0; font-size: 28px; line-height: 1.05; font-weight: 800; letter-spacing: -0.02em">Моя карта путешествий</h1>
     </header>
 
-    <section aria-label="Прогресс" style="background: #E5F6FF; border-radius: 16px; padding: 12px 14px 14px 14px; display: flex; flex-direction: column; gap: 10px">
+    <section aria-label="Прогресс" style="background: #E5F6FF; border-radius: 16px; padding: 10px 14px 12px 14px; display: flex; flex-direction: column; gap: 8px">
       <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
         <span style="font-size: 18px; font-weight: 800; letter-spacing: -0.01em">4 из 89 регионов</span>
         <span style="display: flex; align-items: center; gap: 6px; background: #FFFFFF; border-radius: 999px; padding: 6px 12px 6px 10px; font-size: 13px; font-weight: 700">
@@ -673,7 +662,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
       </div>
     </section>
 
-    <section aria-label="Карта" style="border: 1px solid #E6E8EB; border-radius: 20px; padding: 8px 7px 12px 7px; display: flex; flex-direction: column; gap: 6px">
+    <section aria-label="Карта" style="border: 1px solid #E6E8EB; border-radius: 20px; padding: 6px 7px 10px 7px; display: flex; flex-direction: column; gap: 4px">
       <svg role="img" aria-label="Карта России: посещены Москва, Санкт-Петербург, Казань, Сочи; в планах Калининград и Алтай" width="340" height="196" viewBox="0 0 340 196" style="display: block">
 <polygon points="151.0,18.9 157.1,22.4 157.1,29.6 151.0,33.1 144.8,29.6 144.8,22.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
 <polygon points="167.1,18.9 173.2,22.4 173.2,29.6 167.1,33.1 160.9,29.6 160.9,22.4" fill="#E6E8EB" stroke="#E6E8EB" stroke-width="2.6" stroke-linejoin="round"></polygon>
@@ -834,13 +823,13 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
         <h2 id="want-title" style="margin: 0; font-size: 18px; font-weight: 800; letter-spacing: -0.01em">Хочу поехать</h2>
       </div>
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px">
-        <a href="#" tabindex="-1" style="text-decoration: none; color: #000000; border-radius: 16px; background: #F1E9FE; padding: 12px; display: flex; flex-direction: column; gap: 6px; position: relative; overflow: hidden">
+        <a href="#" tabindex="-1" style="text-decoration: none; color: #000000; border-radius: 16px; background: #F1E9FE; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; position: relative; overflow: hidden">
           <svg aria-hidden="true" width="64" height="64" viewBox="0 0 64 64" style="position: absolute; right: -14px; top: -14px"><circle cx="32" cy="32" r="32" fill="#A169F7"></circle></svg>
           <span style="font-size: 16px; font-weight: 800; letter-spacing: -0.01em; position: relative">Калининград</span>
           <span style="font-size: 13px; font-weight: 600; line-height: 1.3; color: #3D4047; position: relative">18 советов гостей · жильё от 2 900 ₽</span>
           <span style="display: flex; align-items: center; gap: 4px; font-size: 13px; font-weight: 700; position: relative; margin-top: 2px">Советы и жильё<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
         </a>
-        <a href="#" tabindex="-1" style="text-decoration: none; color: #000000; border-radius: 16px; background: #F0F8E0; padding: 12px; display: flex; flex-direction: column; gap: 6px; position: relative; overflow: hidden">
+        <a href="#" tabindex="-1" style="text-decoration: none; color: #000000; border-radius: 16px; background: #F0F8E0; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; position: relative; overflow: hidden">
           <svg aria-hidden="true" width="64" height="64" viewBox="0 0 64 64" style="position: absolute; right: -14px; top: -14px"><circle cx="32" cy="32" r="32" fill="#97CF26"></circle></svg>
           <span style="font-size: 16px; font-weight: 800; letter-spacing: -0.01em; position: relative">Алтай</span>
           <span style="font-size: 13px; font-weight: 600; line-height: 1.3; color: #3D4047; position: relative">12 советов гостей · жильё от 2 400 ₽</span>
@@ -861,14 +850,14 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
       </a>
     </section>
 
-    <button style="flex: none; margin: auto 0 12px 0; height: 52px; border: 0; border-radius: 999px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer">
+    <button style="flex: none; margin: auto 0 10px 0; height: 52px; border: 0; border-radius: 999px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer">
       <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"></circle><line x1="16" y1="16" x2="20" y2="20"></line></svg>
       Найти жильё на Алтае
     </button>
 
   </main>
 
-  <nav aria-label="Основная навигация" style="flex: none; height: 72px; box-sizing: border-box; border-top: 1px solid #E6E8EB; background: #FFFFFF; display: grid; grid-template-columns: repeat(5, 1fr); padding: 6px 4px 10px 4px">
+  <nav aria-label="Основная навигация" style="flex: none; height: 82px; box-sizing: border-box; border-top: 1px solid #E6E8EB; background: #FFFFFF; display: grid; grid-template-columns: repeat(5, 1fr); padding: 6px 4px 30px 4px">
     <a href="#" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #6B6F76">
       <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5L12 4l8 6.5V20h-5v-6h-6v6H4z"></path></svg>
       <span style="font-size: 11px; font-weight: 600">Главная</span>
@@ -890,15 +879,15 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
       <span style="font-size: 11px; font-weight: 700">Профиль</span>
     </a>
   </nav>
-</div></div><div class="home"></div></div></div>
+</div></div><div class="sb" style="color:#000"><span class="t">9:41</span><span class="island"></span><span class="ic"><svg class="cell" width="17" height="11" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx=".9" fill="currentColor"/><rect x="4.67" y="5" width="3" height="6" rx=".9" fill="currentColor"/><rect x="9.33" y="2.5" width="3" height="8.5" rx=".9" fill="currentColor"/><rect x="14" y="0" width="3" height="11" rx=".9" fill="currentColor"/></svg><svg class="wifi" width="16" height="12" viewBox="0 0 16 12" overflow="visible" aria-hidden="true"><path d="M8 11.6L5.95 9.55A2.9 2.9 0 0 1 10.05 9.55ZM3.05 6.65A7 7 0 0 1 12.95 6.65L11.82 7.78A5.4 5.4 0 0 0 4.18 7.78ZM0.36 3.96A10.8 10.8 0 0 1 15.64 3.96L14.58 5.02A9.3 9.3 0 0 0 1.42 5.02Z" fill="currentColor" stroke="currentColor" stroke-width=".8" stroke-linejoin="round"/></svg><svg class="bat" width="26" height="12" viewBox="0 0 26 12" aria-hidden="true"><rect x=".5" y=".5" width="22" height="11" rx="3.3" fill="none" stroke="currentColor" opacity=".35"/><rect x="2" y="2" width="19" height="8" rx="1.9" fill="currentColor"/><path d="M24 4v4c.8-.3 1.4-1.1 1.4-2S24.8 4.3 24 4Z" fill="currentColor" opacity=".4"/></svg></span></div><div class="home" style="background:#000"></div></div></div>
   <figcaption><b>G5</b> Моя карта</figcaption>
 </figure>
 <figure class="phone">
-  <div class="iphone"><i class="b b1"></i><i class="b b2"></i><i class="b b3"></i><i class="b b4"></i><div class="glass"><div class="sb" style="background:#ffffff;color:#000"><span class="t">9:41</span><span class="island"></span><span class="ic"><svg class="cell" width="17" height="11" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx=".9" fill="currentColor"/><rect x="4.67" y="5" width="3" height="6" rx=".9" fill="currentColor"/><rect x="9.33" y="2.5" width="3" height="8.5" rx=".9" fill="currentColor"/><rect x="14" y="0" width="3" height="11" rx=".9" fill="currentColor"/></svg><svg class="wifi" width="16" height="12" viewBox="0 0 16 12" overflow="visible" aria-hidden="true"><path d="M8 11.6L5.95 9.55A2.9 2.9 0 0 1 10.05 9.55ZM3.05 6.65A7 7 0 0 1 12.95 6.65L11.82 7.78A5.4 5.4 0 0 0 4.18 7.78ZM0.36 3.96A10.8 10.8 0 0 1 15.64 3.96L14.58 5.02A9.3 9.3 0 0 0 1.42 5.02Z" fill="currentColor" stroke="currentColor" stroke-width=".8" stroke-linejoin="round"/></svg><svg class="bat" width="26" height="12" viewBox="0 0 26 12" aria-hidden="true"><rect x=".5" y=".5" width="22" height="11" rx="3.3" fill="none" stroke="currentColor" opacity=".35"/><rect x="2" y="2" width="19" height="8" rx="1.9" fill="currentColor"/><path d="M24 4v4c.8-.3 1.4-1.1 1.4-2S24.8 4.3 24 4Z" fill="currentColor" opacity=".4"/></svg></span></div><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #FFFFFF; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
+  <div class="iphone"><i class="b b1"></i><i class="b b2"></i><i class="b b3"></i><i class="b b4"></i><div class="glass"><div class="screen"><div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #FFFFFF; font-family: Manrope, system-ui, sans-serif; color: #000000; display: flex; flex-direction: column">
 
-  <svg aria-hidden="true" width="120" height="84" viewBox="0 0 120 84" style="position: absolute; right: 0; top: 60px"><circle cx="120" cy="40" r="44" fill="#A169F7"></circle><circle cx="52" cy="18" r="13" fill="#00AAFF"></circle><circle cx="64" cy="66" r="8" fill="#97CF26"></circle></svg>
+  <svg aria-hidden="true" width="120" height="84" viewBox="0 0 120 84" style="position: absolute; right: 0; top: 106px"><circle cx="120" cy="40" r="44" fill="#A169F7"></circle><circle cx="52" cy="18" r="13" fill="#00AAFF"></circle><circle cx="64" cy="66" r="8" fill="#97CF26"></circle></svg>
 
-  <main style="flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; gap: 14px; padding: 8px 16px 0 16px; position: relative">
+  <main style="flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; gap: 18px; padding: 54px 16px 0 16px; position: relative">
 
     <div style="margin: 0 -4px; display: flex; align-items: center; justify-content: space-between">
       <button type="button" aria-label="Назад к моей карте" style="width: 44px; height: 44px; border: 0; border-radius: 999px; background: transparent; display: flex; align-items: center; justify-content: center; padding: 0; cursor: pointer">
@@ -982,24 +971,12 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
           </div>
           <a href="#" tabindex="-1" style="flex: none; height: 44px; box-sizing: border-box; padding: 0 14px; border-radius: 999px; border: 1.5px solid #000000; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #000000; text-decoration: none">Смотреть</a>
         </article>
-        <article style="border: 1px solid #E6E8EB; border-radius: 16px; padding: 8px 10px 8px 8px; display: flex; align-items: center; gap: 10px">
-          <div style="flex: none; width: 56px; height: 56px; border-radius: 12px; background: #F2F3F5; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center">
-            <svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40" style="position: absolute; right: -14px; bottom: -14px"><circle cx="20" cy="20" r="20" fill="#97CF26"></circle></svg>
-            <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="position: relative"><rect x="5" y="3.5" width="14" height="16.5" rx="1"></rect><line x1="9" y1="8" x2="10" y2="8"></line><line x1="14" y1="8" x2="15" y2="8"></line><line x1="9" y1="12" x2="10" y2="12"></line><line x1="14" y1="12" x2="15" y2="12"></line><path d="M10.5 20v-3.5h3V20"></path></svg>
-          </div>
-          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
-            <span style="font-size: 12px; font-weight: 600; color: #6B6F76">Здесь жила Света</span>
-            <span style="font-size: 14px; font-weight: 700; line-height: 1.25">Квартира в Амалиенау</span>
-            <span style="font-size: 15px; font-weight: 800">3 600 ₽ <span style="font-size: 12px; font-weight: 600; color: #6B6F76">за ночь</span></span>
-          </div>
-          <a href="#" tabindex="-1" style="flex: none; height: 44px; box-sizing: border-box; padding: 0 14px; border-radius: 999px; border: 1.5px solid #000000; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #000000; text-decoration: none">Смотреть</a>
-        </article>
       </div>
     </section>
 
   </main>
 
-  <div style="flex: none; padding: 10px 16px 16px 16px; border-top: 1px solid #E6E8EB; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+  <div style="flex: none; padding: 10px 16px 30px 16px; border-top: 1px solid #E6E8EB; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
     <span style="display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 13px; font-weight: 600; color: #3D4047">
       <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3D4047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="8.5" width="17" height="4" rx="1"></rect><path d="M5 12.5V20h14v-7.5"></path><line x1="12" y1="8.5" x2="12" y2="20"></line><path d="M12 8.5c-1.5-3.5-5.5-3.5-5.5-1.2 0 1.2 2 1.2 5.5 1.2zM12 8.5c1.5-3.5 5.5-3.5 5.5-1.2 0 1.2-2 1.2-5.5 1.2z"></path></svg>600 ₽ бонусов спишутся при брони
     </span>
@@ -1008,7 +985,7 @@ footer { margin-top:48px; text-align:center; font-size:14px; color:var(--muted);
       Выбрать даты
     </button>
   </div>
-</div></div><div class="home"></div></div></div>
+</div></div><div class="sb" style="color:#000"><span class="t">9:41</span><span class="island"></span><span class="ic"><svg class="cell" width="17" height="11" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx=".9" fill="currentColor"/><rect x="4.67" y="5" width="3" height="6" rx=".9" fill="currentColor"/><rect x="9.33" y="2.5" width="3" height="8.5" rx=".9" fill="currentColor"/><rect x="14" y="0" width="3" height="11" rx=".9" fill="currentColor"/></svg><svg class="wifi" width="16" height="12" viewBox="0 0 16 12" overflow="visible" aria-hidden="true"><path d="M8 11.6L5.95 9.55A2.9 2.9 0 0 1 10.05 9.55ZM3.05 6.65A7 7 0 0 1 12.95 6.65L11.82 7.78A5.4 5.4 0 0 0 4.18 7.78ZM0.36 3.96A10.8 10.8 0 0 1 15.64 3.96L14.58 5.02A9.3 9.3 0 0 0 1.42 5.02Z" fill="currentColor" stroke="currentColor" stroke-width=".8" stroke-linejoin="round"/></svg><svg class="bat" width="26" height="12" viewBox="0 0 26 12" aria-hidden="true"><rect x=".5" y=".5" width="22" height="11" rx="3.3" fill="none" stroke="currentColor" opacity=".35"/><rect x="2" y="2" width="19" height="8" rx="1.9" fill="currentColor"/><path d="M24 4v4c.8-.3 1.4-1.1 1.4-2S24.8 4.3 24 4Z" fill="currentColor" opacity=".4"/></svg></span></div><div class="home" style="background:#000"></div></div></div>
   <figcaption><b>G6</b> Город из планов</figcaption>
 </figure>
   </div>
